@@ -1,0 +1,77 @@
+@import '../../../../variables';
+
+.settings-container{
+    width: 100%;
+    display: flex;
+
+    .left-nav-container{
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+        .section{
+            display: flex;
+            column-gap: 20px;
+            align-items: center;
+            cursor: pointer;
+            transition: 0.2s ease-in;
+            &:hover{
+                
+                .header{
+                    color: $clr-green;
+                    transition: 0.2s ease-in;
+                }
+            }
+
+            &.info{
+                .header{
+                    color: $clr-green;
+                }
+            }
+
+            &.profile{
+                .header{
+                    color: $clr-green;
+                }
+            }
+
+            &.privacy{
+                .header{
+                    color: $clr-green;
+                }
+            }
+            .icon{
+                font-size: 25px;
+                
+            }
+
+            .content{
+                display: flex;
+                flex-direction: column;
+                row-gap: 5px;
+                
+                .header{
+                    font-family: "SFProTextBold";
+                }
+
+                .text{
+                    font-family: "SFProDisplayReg";
+                    color: #a5a5a5;
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+
+    .right-container{
+        width: 100%;
+        display: flex;
+        column-gap: 60px;
+        .vertical-space{
+            width: 1px;
+            height: 100%;
+            background-color: #3D3D3D;
+        }
+    }
+
+}

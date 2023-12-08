@@ -1,0 +1,64 @@
+[
+    {
+        "id": 1,
+        "title": "Hogwarts Legacy",
+        "price": 59.99,
+        "thumb": "images/hogwarts-legacy.jpg"
+    },
+
+    {
+        "id": 2,
+        "title": "The Witcher 3: Wild Hunt",
+        "price": 9.99,
+        "thumb": "images/witcher.jpg"
+    },
+
+    {
+        "id": 3,
+        "title": "WWE 2K23: Icon Edition",
+        "price": 59.99,
+        "thumb": "images/wwe2k.jpg"
+    },
+
+    {
+        "id": 4,
+        "title": "Forspoken",
+        "price": 39.99,
+        "thumb": "images/forspoken.jpg"
+    },
+
+    {
+        "id": 5,
+        "title": "Assassin's Creed Mirage",
+        "price": 69.99,
+        "thumb": "images/acm.png"
+    },
+
+    {
+        "id": 6,
+        "title": "Suicide Squad: Kill the Justice League",
+        "price": 69.99,
+        "thumb": "images/suicide-squad.jpg"
+    },
+
+    {
+        "id": 7,
+        "title": "Wild Hearts",
+        "price": 49.99,
+        "thumb": "images/wild-hearts.jpg"
+    },
+
+    {
+        "id": 8,
+        "title": "Red Dead Redemption 2",
+        "price": 34.99,
+        "thumb": "images/rdr2.webp"
+    },
+
+    {
+        "id": 9,
+        "title": "Planet Zoo",
+        "price": 19.99,
+        "thumb": "images/planet-zoo.jpg"
+    }
+]

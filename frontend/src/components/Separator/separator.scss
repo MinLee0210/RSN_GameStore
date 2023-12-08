@@ -1,0 +1,19 @@
+.separator{
+    height: 60px;
+    width: 100%;
+    position: relative;
+    top: 0;
+    background-color: #272727;
+
+    &.wide{
+        height: 80px;
+    }
+
+    &.medium{
+        height: 40px;
+    }
+
+    &.tight{
+        height: 20px;
+    }
+}

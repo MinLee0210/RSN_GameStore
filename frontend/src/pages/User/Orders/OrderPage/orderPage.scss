@@ -1,0 +1,213 @@
+@import '../../../../variables';
+
+.order-page-container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 150px;
+    margin-right: 150px;
+
+    .header{
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+
+        &.none{
+            display: none;
+        }
+        .back{
+            font-size: 20px;
+            cursor: pointer;
+            transition: 0.2s;
+            &:hover{
+                color: $clr-green;
+                transition: 0.2s;
+            }
+        }
+        .title{
+            font-family: "SFProTextReg";
+            color: #a5a5a5;
+        }
+    }
+
+    .status{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 10px;
+        margin-top: 30px;
+        .icon{
+            color: #25DE57;
+            font-size: 30px;
+        }
+
+        .status-text{
+            font-family: "SFProDisplayBold";
+            font-size: 1.5rem;
+        }
+    }
+
+
+
+    .order-card{
+        background-color: #272727;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        .order-card-container{
+            background-color: #323232;
+            height: max-content;
+            width: 100%;
+            margin-top: 100px;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .order-card-image{
+                height: 250px;
+                width: 385px;
+                border-radius: 12px;
+                overflow: clip;
+                transform: translateY(-60px);
+                img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+
+                }
+            }
+            .order-card-top{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: -10px;
+                row-gap: 5px;
+                .title{
+                    font-family: "DTPhudu";
+                    font-size: 2rem;
+                }
+
+                .text{
+                    font-family: "SFProDisplayReg";
+                    color: #a5a5a5;
+                }
+            }
+
+            .activation-container{
+                height: 100px;
+                width: 45%;
+                background-color: #101010;
+                margin-top: 60px;
+                border-radius: 12px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                .code{
+                    font-family: "SFProDisplayBold";
+                    font-size: 1.5rem;
+                }
+
+                .icon{
+                    position: absolute;
+                    top: -20px;
+                    color:#14487B;
+                    background-color: white;
+                    padding: -5px;
+                    font-size: 40px;
+                    border-radius: 50px;
+                }
+            }
+
+            .order-card-bottom{
+                margin: 30px;
+                .text{
+                    font-family: "SFProDisplayReg";
+                    color: #a5a5a5;
+                }
+            }
+        } 
+    }
+
+    .order-card-multi{
+        width: 100%;
+        height: max-content;
+        background-color: #323232;
+        display: flex;
+        padding: 40px;
+        margin-top: 40px;
+        border-radius: 12px;
+        align-items: center;
+        .order-left{
+            width: 20%;
+            height: 150px;
+            border-radius: 12px;
+            overflow: clip;
+            img{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .order-right{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 80%;
+
+            .title{
+                font-family: "DTPhudu";
+                font-size: 1.5rem;
+            }
+
+            .text{
+                font-family: "SFProDisplayReg";
+                color: #a5a5a5;
+            }
+
+            .activation-container{
+                height: 80px;
+                width: 55%;
+                background-color: #101010;
+                margin-top: 45px;
+                border-radius: 12px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                .code{
+                    font-family: "SFProDisplayBold";
+                    font-size: 1.3rem;
+                }
+
+                .icon{
+                    position: absolute;
+                    top: -20px;
+                    color:#14487B;
+                    background-color: white;
+                    padding: -5px;
+                    font-size: 35px;
+                    border-radius: 50px;
+                }
+            }
+
+            .order-card-bottom{
+                margin-top: 30px;
+            }
+        }
+    }
+
+    .order-info{
+        margin-top: 20px;
+        margin-left: 30px;
+        display: flex;
+        column-gap: 5px;
+
+        label{
+            font-family: "SFProDisplayReg";
+            color: #a5a5a5;
+        }
+    }
+}

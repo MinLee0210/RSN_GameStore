@@ -1,0 +1,13 @@
+@import "../../../variables";
+
+.user-dash-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    .level{
+        width: 100%;
+        display: flex;
+        column-gap: 30px;
+    }
+}

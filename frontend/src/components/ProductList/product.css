@@ -1,0 +1,47 @@
+.item-container {
+  display: flex;
+  flex-direction: column;
+  height: 285px;
+  width: calc(33.3333333333% - 22px);
+  position: relative;
+  row-gap: 15px;
+}
+.item-container .product-link {
+  border-radius: 0.8rem;
+  overflow: hidden;
+  transition: 0.3s;
+  height: 250px;
+}
+.item-container .product-link:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+.item-container .product-link img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.item-container .item-description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.item-container .item-description .item-name {
+  font-family: "DTphuduReg";
+  font-size: 1.1rem;
+}
+.item-container .item-description .item-price {
+  font-family: "DTphuduReg";
+  font-size: 1.2rem;
+}
+
+@media (min-width: 1600px) {
+  .item-container {
+    width: 510px;
+    height: 360px;
+  }
+  .item-container .product-link {
+    height: 360px;
+  }
+}/*# sourceMappingURL=product.css.map */

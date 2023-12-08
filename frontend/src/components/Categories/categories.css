@@ -1,0 +1,92 @@
+.categories-inner-container {
+  position: relative;
+  min-height: 900px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 20px;
+}
+.categories-inner-container .categories-item-container {
+  min-height: 240px;
+  min-width: 385px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  color: #ffffff;
+  border-radius: 0 0 0.8rem 0.8rem;
+  overflow: hidden;
+  transition: 0.4s;
+}
+.categories-inner-container .categories-item-container:hover .character-image {
+  transform: scale(1.1);
+  transition: 0.4s;
+}
+.categories-inner-container .categories-item-container .categories-item-content {
+  position: relative;
+  width: 100%;
+  height: 90%;
+  background-color: #242424;
+  border-radius: 0.8rem 0.8rem 0 0;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.categories-inner-container .categories-item-container .categories-item-content .categories-cover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.categories-inner-container .categories-item-container .categories-item-content:after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #000000;
+  opacity: 0.8;
+  overflow: hidden;
+}
+.categories-inner-container .categories-item-container .categories-item-content h1 {
+  position: relative;
+  font-size: 1.7rem;
+  z-index: 16;
+  margin-left: 30px;
+}
+.categories-inner-container .categories-item-container .characters {
+  position: absolute;
+  width: 70%;
+  height: 100%;
+  right: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.categories-inner-container .categories-item-container .characters img {
+  height: 95%;
+  transition: 0.4s;
+}
+.categories-inner-container .categories-item-container .characters.chief {
+  margin-right: -40px;
+  height: 88%;
+}
+.categories-inner-container .categories-item-container .characters.geralt {
+  margin-right: -40px;
+}
+@media (min-width: 1600px) {
+  .categories-inner-container {
+    row-gap: 20px;
+  }
+  .categories-inner-container .categories-item-container {
+    width: 510px;
+    height: 360px;
+  }
+  .categories-inner-container .categories-item-container .characters img {
+    height: 95%;
+  }
+  .categories-inner-container .categories-item-container .characters .marine {
+    transform: translateX(12%);
+  }
+}/*# sourceMappingURL=categories.css.map */

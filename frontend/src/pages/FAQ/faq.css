@@ -1,0 +1,58 @@
+.faq-container {
+  height: auto;
+  border: 1px solid black;
+  font-size: 15px;
+}
+.faq-container .paragraph-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 120px 300px 60px 300px;
+  width: auto;
+  height: -moz-max-content;
+  height: max-content;
+  list-style: none;
+  counter-reset: my-awesome-counter;
+  overflow: hidden;
+  padding: 0;
+}
+.faq-container .paragraph-item {
+  margin-bottom: 40px;
+  font-family: SFProTextReg;
+}
+.faq-container .paragraph-item .p-header {
+  margin-bottom: 30px;
+}
+.faq-container .paragraph-item h1 {
+  font-family: "DTPhudu";
+  font-size: 32px;
+}
+.faq-container .paragraph-item h2 {
+  font-family: "DTPhudu";
+  font-size: 23px;
+}
+.faq-container .paragraph-item h3 {
+  font-family: "DTPhudu";
+  font-size: 19px;
+}
+.faq-container .paragraph-item h4 {
+  font-family: "DTPhudu";
+  font-size: 15px;
+}
+.faq-container .paragraph-item p {
+  font-size: 15px !important;
+  color: #999;
+  margin-top: 15px;
+}
+.faq-container .paragraph-item p ul {
+  list-style-type: none;
+}
+.faq-container .paragraph-item p ul li:before {
+  content: "- ";
+}
+.faq-container .paragraph-item:nth-child(2) p {
+  font-weight: bold;
+}
+.faq-container .p-list {
+  counter-increment: my-awesome-counter;
+}/*# sourceMappingURL=faq.css.map */

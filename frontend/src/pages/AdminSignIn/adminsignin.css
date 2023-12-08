@@ -1,0 +1,27 @@
+.admin-login-container {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.admin-login-container .poster {
+  width: 50%;
+}
+.admin-login-container .login-container-outer {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.admin-login-container .login-container-outer .login-container-inner .header {
+  color: #ffffff;
+}
+.admin-login-container .login-container-outer .login-container-inner .alert {
+  font-family: "SFProTextReg";
+  color: #DC2938;
+}
+.admin-login-container .login-container-outer .login-container-inner .alert.inactive {
+  display: none;
+}
+.admin-login-container .login-container-outer .login-container-inner img {
+  width: 160px;
+}/*# sourceMappingURL=adminsignin.css.map */

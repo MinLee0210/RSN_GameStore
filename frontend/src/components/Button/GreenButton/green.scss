@@ -1,0 +1,25 @@
+.green-button{
+    color: #ffffff;
+    background-color: #01D47A;
+    padding: 0.8rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    border-radius: 8px;
+    font-family: "DTphuduMedium";
+    font-size: 1.1rem;
+    width: max-content;
+    transition: 0.4s;
+
+    &.none{
+        pointer-events: none;
+        background-color: #007e47;
+
+        &:hover{
+            background-color: #007e47;
+        }
+    }
+    &:hover{
+        background-color: #02f089;
+        transition: 0.4s;
+    }
+}

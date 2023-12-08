@@ -1,0 +1,75 @@
+.activate-container {
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+}
+.activate-container .activate-top {
+  margin-left: 150px;
+  margin-right: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.activate-container .activate-top .step-container {
+  display: flex;
+  width: 650px;
+  height: 50px;
+  font-family: "SFProTextMedium";
+  align-items: center;
+  justify-content: center;
+}
+.activate-container .activate-top .step-container .step {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.activate-container .activate-top .step-container .step .number {
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+  border: 3px solid #01D47A;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.activate-container .activate-top .step-container .step .spacer {
+  height: 3px;
+  width: 100px;
+  background-color: #3D3D3D;
+  position: relative;
+}
+.activate-container .activate-top .step-container .step.one .number, .activate-container .activate-top .step-container .step.two .number {
+  background-color: #01D47A;
+}
+.activate-container .activate-top .step-container .step.one .number .icon, .activate-container .activate-top .step-container .step.two .number .icon {
+  color: white;
+  font-size: 12px;
+  transform: scale(2.2);
+}
+.activate-container .activate-top .step-container .step.one .text, .activate-container .activate-top .step-container .step.two .text {
+  color: #6d6d6d;
+  transition: 0.2s;
+}
+.activate-container .activate-top .step-container .step.one .spacer, .activate-container .activate-top .step-container .step.two .spacer {
+  background-color: #3D3D3D;
+  height: 3px;
+  width: 100px;
+}
+.activate-container .activate-top .step-container .step.one .spacer .inner, .activate-container .activate-top .step-container .step.two .spacer .inner {
+  background-color: #01D47A;
+  height: 3px;
+  width: 100px;
+}
+.activate-container .activate-top .step-container .step.one:hover .text, .activate-container .activate-top .step-container .step.two:hover .text {
+  color: white;
+  transition: 0.2s;
+}
+.activate-container .activate-top .step-container .step.three .number {
+  color: white;
+  border: 3px solid #01D47A;
+}
+.activate-container .activate-top .step-container .step.three .text {
+  color: white;
+}/*# sourceMappingURL=activation.css.map */

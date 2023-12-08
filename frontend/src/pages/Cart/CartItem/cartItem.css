@@ -1,0 +1,78 @@
+.cart-item {
+  width: 100%;
+  height: 160px;
+  background-color: #323232;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+.cart-item.deleted {
+  display: none;
+}
+.cart-item .left {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  align-items: center;
+}
+.cart-item .left .thumb {
+  width: 180px;
+  height: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.cart-item .left .thumb img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.cart-item .left .info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.cart-item .left .info h1 {
+  font-size: 1.2rem;
+}
+.cart-item .left .info span {
+  font-family: "SFProDisplayReg";
+  font-size: 0.9rem;
+  color: #a5a5a5;
+}
+.cart-item .left .info .bottom {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  margin-top: 15px;
+}
+.cart-item .left .info .bottom .icon {
+  color: #a5a5a5;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.cart-item .left .info .bottom .icon:hover {
+  color: white;
+  transition: 0.2s;
+}
+.cart-item .left .info .bottom .spacer {
+  width: 1px;
+  height: 15px;
+  background-color: #a5a5a5;
+}
+.cart-item .left .info .bottom .wishlist {
+  font-family: "SFProDisplayReg";
+  color: #a5a5a5;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+.cart-item .right span {
+  font-family: "DTphuduMedium";
+  font-size: 1.4rem;
+}/*# sourceMappingURL=cartItem.css.map */

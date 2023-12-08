@@ -1,0 +1,265 @@
+@import '../../../../variables';
+
+.add-container{
+    width: 100%;
+    
+    .header{
+        text-align: left;
+        display: flex;
+        align-items: center;
+        color: $clr-green;
+        font-size: 2rem;
+        margin-bottom: 0;
+        .icon{
+            color: $clr-green;
+            font-size: 35px;
+            margin-right: 15px;
+        }
+    }
+
+    .form-container{
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+        .form-container-level{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            min-height: 70px;
+            
+            label{
+                font-family: "SFProTextBold";
+                font-size: 1.1rem;
+            }
+
+            .field-container{
+                display: flex;
+                flex-direction: column;
+                row-gap: 15px;
+
+                select{
+                    width: 350px;
+                    min-height: 50px;
+                    background-color: #242424;
+                    box-shadow: inset 0 0 0 2px #3D3D3D;
+                    border: 0;
+                    transition: 0.2s;
+                    border-radius: 8px;
+                    color: #ffffff;
+                    padding: 15px;
+                    font-family: "SFProTextReg";
+
+                    &:focus{
+                        border: 2px solid #01D47A;
+                        transition: 0.2s;
+                        color: #ffffff;
+                    }
+
+                    
+                }
+
+                input{
+                    width: 350px;
+                    height: 100%;
+                    min-height: 50px;
+                    outline: none;
+                    background-color: #242424;
+                    padding: 15px;
+                    box-shadow: inset 0 0 0 2px #3D3D3D;
+                    transition: 0.2s;
+                    border: 0;
+                    border-radius: 8px;
+                    color: #ffffff;
+
+                    &::placeholder{
+                        font-family: "SFProTextReg";
+                    }
+
+                    &:focus{
+                        border: 2px solid #01D47A;
+                        transition: 0.2s;
+                        color: #ffffff;
+                    }
+                    
+                    option{
+                        padding: 10px;
+                    }
+                }
+
+                input[type="date"]{
+                    font-family: "SFProTextReg";
+                    
+                    &::-webkit-calendar-picker-indicator{
+                        background-color: #ffffff;
+                        padding: 5px;
+                        cursor: pointer;
+                        border-radius: 3px;
+                    }
+                }
+
+                &.three{
+                    width: 100%;
+                    height: 100%;
+
+                    .ck{
+                        font-family: "SFProTextReg";
+
+                        .ck-editor__top{
+                            height: 50px;
+                            position: relative;
+                            
+
+                            .ck-sticky-panel{
+
+                                height: 100%;
+
+                                .ck-sticky-panel__content{
+                                    height: 100%;
+
+                                    .ck-toolbar{
+                                        height: 100%;
+                                        background-color: #F0F2F5;
+                                        border-radius: 8px 8px 0 0;
+                                    }
+                                }
+
+                                
+                            }
+
+                            
+                        }
+
+                        .ck-editor__main{
+                            
+                            .ck-content{
+                                min-height: calc(50px * 8);
+                                background-color: #242424;
+                                box-shadow: inset 0 0 0 2px #3D3D3D;
+                                border: 0;
+                                border-radius: 0 0 8px 8px;
+                            }
+                        }
+                    }
+                    
+                }
+
+                &.four{
+                    width: 100%;
+                    height: 100%;
+
+                    .image-container{
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        .image-cover{
+                            width: calc(350px * 1.4);
+                            height: calc(50px * 8);
+                            background-color: #242424;
+                            box-shadow: inset 0 0 0 2px #3D3D3D;
+                            border-radius: 8px;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            row-gap: 10px;
+                            cursor: pointer;
+                            transition: 0.2s;
+
+                            .upload{
+                                height: max-content;
+                                font-family: "SFProTextReg";
+                                box-shadow: none;
+                                width: 250px;
+                            }
+                            &:hover{
+                                border: 1px solid #01D47A;
+                                transition: 0.2s;
+                            }
+
+                            .icon{
+                                font-size: 50px;
+                                color: #01D47A;
+                            }
+
+                            label{
+                                font-family: "SFProTextReg";
+                            }
+
+                        }
+
+                        .image-showcase{
+                            display: flex;
+                            height: calc(50px * 8);
+                            width: calc(350px * 2);
+                            // background-color: #3D3D3D;
+                            justify-content: space-between;
+                            flex-wrap: wrap;
+                            align-items: center;
+                            row-gap: 20px;
+                            &-item{
+                                height: 47%;
+                                width: 215px;
+                                background-color: #242424;
+                                box-shadow: inset 0 0 0 2px #3D3D3D;
+                                border-radius: 8px;
+                                cursor: pointer;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                row-gap: 10px;
+                                align-items: center;
+
+                                .upload{
+                                    height: max-content;
+                                    font-family: "SFProTextReg";
+                                    box-shadow: none;
+                                    width: 250px;
+                                }
+
+                                label{
+                                    font-family: "SFProTextReg";
+                                    font-size: 0.9rem;
+                                }
+                                .icon{
+                                    font-size: 40px;
+                                    color: #01D47A;
+                                }
+
+                                &:hover{
+                                    border: 1px solid #01D47A;
+                                    transition: 0.2s;
+                                }
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+
+        .bottom-container{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            label{
+                font-family: "SFProTextReg";
+                color: #A5A5A5;
+            }
+            .submit-button{
+                width: 215px;
+                background-color: #01D47A;
+                border: 0;
+                border-radius: 8px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                font-family: "DTphuduMedium";
+                color: white;
+                cursor: pointer;
+            }
+        }
+        
+    }
+}

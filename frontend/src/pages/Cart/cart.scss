@@ -1,0 +1,211 @@
+@import '../../variables';
+
+.cart-container{
+    width: 100%;
+
+    .cart-inner-container{
+        height: 100%;
+        margin-left: 150px;
+        margin-right: 150px;
+        // background-color: #323232;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .step-container{
+            width: 650px;
+            height: 50px;
+            // background-color: #292929;
+            display: flex;
+            font-family: "SFProTextMedium";
+            align-items: center;
+            justify-content: center;
+            .step{
+                display: flex;
+                align-items: center;
+                column-gap: 10px;
+
+                &.two, &.three{
+                    .number{
+                        color: #a5a5a5;
+                        border: 3px solid #3D3D3D;
+                    }
+                    .text{
+                        color: #a5a5a5;
+                    }
+                }
+                .number{
+                    width: 30px;
+                    height: 30px;
+                    padding: 10px;
+                    border: 3px solid $clr-green;
+                    border-radius: 100px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .spacer{
+                    height: 3px;
+                    width: 100px;
+                    background-color: #3D3D3D;
+                }
+
+            }
+
+        }
+
+        .content-container{
+            width: 100%;
+            display: flex;
+            position: relative;
+            column-gap: 50px;
+            .left-container{
+                width: 60%;
+                display: flex;
+                flex-direction: column;
+                
+                &-level{
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 20px;
+
+                    .cart-item-container{
+                        width: 100%;
+                        height: max-content;
+
+                        .empty-container{
+                            width: 100%;
+                            height: calc(50px * 8);
+                            display: flex;
+                            background-color: #323232;
+                            border-radius: 12px;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+                            row-gap: 30px;
+                            padding-left: 20%;
+                            padding-right: 20%;
+                            .icon{
+                                font-size: 50px;
+                                color: $clr-green;
+
+
+                            }
+
+                            h1{
+                                font-size: 1.5rem;
+                            }
+
+                            p{
+                                font-family: "SFProTextReg";
+                                color: #a5a5a5;
+                                text-align: center;
+                            }
+
+                            .button{
+                                font-size: 1.2rem;
+                                padding-left: 25px;
+                                padding-right: 25px;
+                            }
+                        }
+
+                        .inventory-container{
+                            width: 100%;
+                            height: max-content;
+                            display: flex;
+                            flex-direction: column;
+                            row-gap: 20px;
+                        }
+                    }
+                }
+                
+            }
+
+            .right-container{
+                width: 35%;
+                display: flex;
+                flex-direction: column;
+                row-gap: 20px;
+                
+                .summary-container{
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 20px;
+                    height: calc(50px * 6);
+                    width: 100%;
+                    background-color: #323232;
+                    border-radius: 12px;
+                    padding: 25px 30px 25px 30px;
+                    position: sticky;
+                    top: 100px;
+                    .price-info-container{
+                        display: flex;
+                        flex-direction: column;
+                        row-gap: 15px;
+                        
+
+                        .price-level{
+                            display: flex;
+                            align-items: baseline;
+                            justify-content: space-between;
+                            font-family: "SFProDisplayReg";
+                            color: #a5a5a5;
+
+                            &.official{
+                                color: white;
+                                font-family: "SFProDisplayBold";
+                                .price{
+                                    font-size: 1.5rem;
+                                }
+                            }
+                        }
+                    }
+
+                    .green-button{
+                        width: 100%;
+                        height: 50px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;    
+                        font-family: "DTphuduMedium";
+                    }
+
+                    .divider{
+                        display: flex;
+                        align-items: center;
+                        column-gap: 10px;
+                        .spacer{
+                            height: 1px;
+                            width: 100%;
+                            background-color: #474747;
+                        }
+
+                        label{
+                            color: #a5a5a5;
+                            font-family: "SFProDisplayReg";
+                        }
+                    }
+
+                    .back{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: #a5a5a5;
+                        font-family: "SFProDisplayBold";
+                        transition: 0.2s;
+                        &:hover{
+                            color: white;
+                            transition: 0.2s;
+                        }
+                        
+                        .icon{
+                            margin-right: 8px;
+                            font-size: 15px;
+                            transform: translateY(0.5px);
+                        }   
+                    }
+                }
+            }
+        }
+    }
+}

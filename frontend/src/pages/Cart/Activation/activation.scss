@@ -1,0 +1,95 @@
+@import '../../../variables';
+
+.activate-container{
+    width: 100%;
+    height: max-content;
+
+    .activate-top{
+        margin-left: 150px;
+        margin-right: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .step-container{
+            display: flex;
+            width: 650px;
+            height: 50px;
+            font-family: "SFProTextMedium";
+            align-items: center;
+            justify-content: center;
+
+            .step{
+                display: flex;
+                align-items: center;
+                column-gap: 10px;
+
+                .number{
+                    width: 30px;
+                    height: 30px;
+                    padding: 10px;
+                    border: 3px solid $clr-green;
+                    border-radius: 100px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .spacer{
+                    height: 3px;
+                    width: 100px;
+                    background-color: #3D3D3D;
+                    position: relative;
+                    
+                }
+                &.one, &.two{
+                    .number{
+                        background-color: $clr-green;
+
+                        .icon{
+                            color: white;
+                            font-size: 12px;
+                            transform: scale(2.2);
+                        }
+                    }
+                    .text{
+                        color: #6d6d6d;
+                        transition: 0.2s;
+                    }
+
+                    .spacer{
+                        background-color: #3D3D3D;
+                        height: 3px;
+                        width: 100px;
+
+                        .inner{
+                            background-color: $clr-green;
+                            height: 3px;
+                            width: 100px;
+                        }
+
+                    }
+
+                    &:hover{
+                        .text{
+                            color: white;
+                            transition: 0.2s;
+                        }
+                    }
+                }
+
+                &.three{
+                    .number{
+                        color: white;
+                        border: 3px solid $clr-green;
+                    }
+                    .text{
+                        color: white;
+                    }
+                }
+
+
+            }
+
+        }
+    }
+}

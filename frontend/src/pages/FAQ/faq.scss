@@ -1,0 +1,74 @@
+@import "../../_variables.scss";
+
+.faq-container {
+  height: auto;
+  border: 1px solid black;
+  font-size: 15px;
+  .paragraph-container {
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-around;
+    flex-wrap: wrap;
+
+    margin: 120px 300px 60px 300px;
+    // border: 1px solid yellow;
+    width: auto;
+    height: max-content;
+    list-style: none;
+    counter-reset: my-awesome-counter;
+    overflow: hidden;
+    padding: 0;
+  }
+  .paragraph-item {
+    // border: 1px solid green;
+    // width: 100%;
+    margin-bottom: 40px;
+    font-family: SFProTextReg;
+    .p-header {
+      margin-bottom: 30px;
+    }
+    h1 {
+      font-family: "DTPhudu";
+      font-size: 32px;
+    }
+    h2 {
+      font-family: "DTPhudu";
+      font-size: 23px;
+    }
+    h3 {
+      font-family: "DTPhudu";
+      font-size: 19px;
+    }
+    h4 {
+      font-family: "DTPhudu";
+      font-size: 15px;
+    }
+    p {
+      // font-family: "DTPhudu";
+      font-size: 15px !important;
+      color: #999;
+      margin-top: 15px;
+      ul {
+        list-style-type: none;
+        li:before {
+          content: "- ";
+        }
+      }
+    }
+  }
+  .paragraph-item:nth-child(2) {
+    p {
+      font-weight: bold;
+    }
+  }
+  .p-list {
+    counter-increment: my-awesome-counter;
+  }
+  //     .p-list::marker{
+  //         content: counter(my-awesome-counter) ". ";
+  //         font-weight: bold;
+  //         font-size: 19px;
+
+  // }
+}
+

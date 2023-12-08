@@ -1,0 +1,127 @@
+@import "../../_variables.scss";
+
+.pp-container {
+  height: auto;
+  border: 1px solid black;
+  font-size: 15px;
+  .paragraph-container {
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 120px 350px 60px 350px;
+    // border: 1px solid yellow;
+    width: auto;
+    height: max-content;
+    list-style: none;
+    counter-reset: my-awesome-counter;
+    // overflow: hidden;
+    padding: 0;
+    .paragraph-policy,
+    .paragraph-risen,
+    .paragraph-notice,
+    .paragraph-how {
+      margin-bottom: 20px;
+    }
+    .table-flex {
+      // border: 1px solid yellow;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      height: 80px;
+      background-color: #323232;
+      border-top-right-radius: 20px;
+      border-top-left-radius: 20px;
+      color: #a5a5a5;
+      font-family: "SFProTextReg";
+    }
+
+    .table-grid {
+      display: grid;
+      grid-template-columns: 33% 33% 33%;
+      grid-template-rows: auto auto auto auto auto auto auto auto;
+      border: 1px solid #323232;
+      .table-grid-item {
+        font-family: SFProTextReg;
+        border: 1px solid #323232;
+        border-right: 0;
+        padding: 25px;
+        color: #999;
+        line-height: 25px;
+      }
+    }
+  }
+  .paragraph-item {
+    // border: 1px solid green;
+    // width: 100%;
+    margin-bottom: 60px;
+    font-family: SFProTextReg;
+    .p-header {
+      margin-bottom: 30px;
+    }
+
+    &.paragraph-policy{
+      margin-bottom: 40px;
+    }
+
+    h1 {
+      font-family: "DTPhuduMedium";
+      font-size: 2rem;
+      margin-bottom: 40px;
+    }
+    h2 {
+      font-family: "DTPhudu";
+      font-size: 2rem;
+      color: $clr-green;
+    }
+    h3 {
+      font-family: "SFProTextBold";
+      font-size: 1.2rem;
+    }
+    p {
+      // font-family: "DTPhudu";
+      font-size: 15px !important;
+      color: #a5a5a5;
+      margin-top: 1rem;
+      line-height: 25px;
+      ul {
+        list-style-type: none;
+        li:before {
+          content: "- ";
+        }
+      }
+    }
+  }
+
+  .p-list {
+    counter-increment: my-awesome-counter;
+
+    li{
+      
+
+      &::before{
+        line-height: 25px;
+      }
+    }
+  }
+}
+// @media only screen and (min-width: 700px)  and (max-width: 1312px) {
+//     .pp-container{
+//         .paragraph-container{
+//             height: auto;
+//             .paragraph-item{
+//             }
+//         }
+//     }
+// }
+// @media only screen and (max-width: 700px) {
+//     .pp-container{
+//         .paragraph-container{
+//             height: auto;
+//             .p-list{
+//                 margin: 20px;
+//             }
+//         }
+//     }
+// }

@@ -1,0 +1,346 @@
+.payment-container {
+  width: 100%;
+}
+.payment-container .payment-inner-container {
+  height: 100%;
+  margin-left: 150px;
+  margin-right: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.payment-container .payment-inner-container .step-container {
+  width: 650px;
+  height: 50px;
+  display: flex;
+  font-family: "SFProTextMedium";
+  align-items: center;
+  justify-content: center;
+}
+.payment-container .payment-inner-container .step-container .step {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.payment-container .payment-inner-container .step-container .step .number {
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+  border: 3px solid #01D47A;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.payment-container .payment-inner-container .step-container .step .spacer {
+  height: 3px;
+  width: 100px;
+  background-color: #3D3D3D;
+  position: relative;
+}
+.payment-container .payment-inner-container .step-container .step.one .number {
+  background-color: #01D47A;
+}
+.payment-container .payment-inner-container .step-container .step.one .number .icon {
+  color: white;
+  font-size: 12px;
+  transform: scale(2.2);
+}
+.payment-container .payment-inner-container .step-container .step.one .text {
+  color: #6d6d6d;
+  transition: 0.2s;
+}
+.payment-container .payment-inner-container .step-container .step.one .spacer {
+  background-color: #3D3D3D;
+  height: 3px;
+  width: 100px;
+}
+.payment-container .payment-inner-container .step-container .step.one .spacer .inner {
+  background-color: #01D47A;
+  height: 3px;
+  width: 100px;
+}
+.payment-container .payment-inner-container .step-container .step.one:hover .text {
+  color: white;
+  transition: 0.2s;
+}
+.payment-container .payment-inner-container .step-container .step.three .number {
+  color: #a5a5a5;
+  border: 3px solid #3D3D3D;
+}
+.payment-container .payment-inner-container .step-container .step.three .text {
+  color: #a5a5a5;
+}
+.payment-container .payment-inner-container .content-container {
+  width: 100%;
+  display: flex;
+  position: relative;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+}
+.payment-container .payment-inner-container .content-container .left-container {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+.payment-container .payment-inner-container .content-container .left-container .error {
+  margin-left: 30px;
+  margin-top: 20px;
+  font-family: "SFProDisplayBold";
+  color: #DC2938;
+}
+.payment-container .payment-inner-container .content-container .left-container .credit-card {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.payment-container .payment-inner-container .content-container .left-container .credit-card .credit-form {
+  width: 100%;
+  height: 425px;
+  background-color: #323232;
+  border-radius: 12px;
+  padding: 20px;
+  border: 3px solid #01D47A;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+.payment-container .payment-inner-container .content-container .left-container .credit-card .credit-form label {
+  font-family: "SFProDisplayReg";
+}
+.payment-container .payment-inner-container .content-container .left-container .credit-card .credit-form input {
+  outline: none;
+  background-color: #242424;
+  padding: 15px;
+  box-shadow: inset 0 0 0 2px #3D3D3D;
+  border: 0;
+  border-radius: 8px;
+  padding: 20px;
+  color: white;
+}
+.payment-container .payment-inner-container .content-container .left-container .credit-card .credit-form .credit-level {
+  height: 65px;
+  width: 100%;
+}
+.payment-container .payment-inner-container .content-container .left-container .credit-card .credit-form .credit-level.one {
+  display: flex;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  align-items: center;
+}
+.payment-container .payment-inner-container .content-container .left-container .credit-card .credit-form .credit-level.one .visa {
+  width: 120px;
+  height: 100%;
+  background-color: white;
+  border-radius: 8px;
+  overflow: clip;
+}
+.payment-container .payment-inner-container .content-container .left-container .credit-card .credit-form .credit-level.one .visa img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.payment-container .payment-inner-container .content-container .left-container .credit-card .credit-form .credit-level.one .title {
+  font-family: "SFProTextBold";
+  font-size: 1.1rem;
+}
+.payment-container .payment-inner-container .content-container .left-container .credit-card .credit-form .credit-level.two {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.payment-container .payment-inner-container .content-container .left-container .credit-card .credit-form .credit-level.two input {
+  height: 100%;
+  border: 0px solid transparent;
+}
+.payment-container .payment-inner-container .content-container .left-container .credit-card .credit-form .credit-level.two input[type=text]:focus {
+  border: 2px solid #01D47A;
+  transition: 0.2s;
+  color: #ffffff;
+}
+.payment-container .payment-inner-container .content-container .left-container .credit-card .credit-form .credit-level.three {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.payment-container .payment-inner-container .content-container .left-container .credit-card .credit-form .credit-level.three input {
+  height: 100%;
+}
+.payment-container .payment-inner-container .content-container .left-container .credit-card .credit-form .credit-level.three input[type=text]:focus {
+  border: 2px solid #01D47A;
+  transition: 0.2s;
+  color: #ffffff;
+}
+.payment-container .payment-inner-container .content-container .left-container .credit-card .credit-form .credit-level.four {
+  display: flex;
+  width: 100%;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+.payment-container .payment-inner-container .content-container .left-container .credit-card .credit-form .credit-level.four input {
+  height: 100%;
+}
+.payment-container .payment-inner-container .content-container .left-container .credit-card .credit-form .credit-level.four input[type=text]:focus {
+  border: 2px solid #01D47A;
+  transition: 0.2s;
+  color: #ffffff;
+}
+.payment-container .payment-inner-container .content-container .left-container .credit-card .credit-form .credit-level.four .expiration {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  width: 50%;
+}
+.payment-container .payment-inner-container .content-container .left-container .credit-card .credit-form .credit-level.four .security {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  width: 50%;
+}
+.payment-container .payment-inner-container .content-container .right-container {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.payment-container .payment-inner-container .content-container .right-container .summary-final {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.payment-container .payment-inner-container .content-container .right-container .summary-final .order-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  background-color: #323232;
+  padding: 20px 30px 40px 30px;
+  border-radius: 12px;
+}
+.payment-container .payment-inner-container .content-container .right-container .summary-final .order-container .order-inner-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.payment-container .payment-inner-container .content-container .right-container .summary-final .order-container .order-inner-container .order-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.payment-container .payment-inner-container .content-container .right-container .summary-final .order-container .order-inner-container .order-item .order-item-left {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2px;
+}
+.payment-container .payment-inner-container .content-container .right-container .summary-final .order-container .order-inner-container .order-item .order-item-left .title {
+  font-family: "SFProDisplayBold";
+}
+.payment-container .payment-inner-container .content-container .right-container .summary-final .order-container .order-inner-container .order-item .order-item-left .platform {
+  font-family: "SFProDisplayReg";
+  font-size: 0.9rem;
+  color: #a5a5a5;
+}
+.payment-container .payment-inner-container .content-container .right-container .summary-final .order-container .order-inner-container .order-item .order-item-right .price {
+  font-family: "SFProDisplayReg";
+  font-size: 1rem;
+  color: #a5a5a5;
+}
+.payment-container .payment-inner-container .content-container .right-container .summary-final .order-container .order-inner-container .spacer-mini {
+  height: 1px;
+  width: 100%;
+  background-color: #3D3D3D;
+}
+.payment-container .payment-inner-container .content-container .right-container .summary-final .order-container .secure-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 10px;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.payment-container .payment-inner-container .content-container .right-container .summary-final .order-container .secure-container .lock {
+  font-size: 35px;
+}
+.payment-container .payment-inner-container .content-container .right-container .summary-final .order-container .secure-container .lock path {
+  stroke: #01D47A;
+}
+.payment-container .payment-inner-container .content-container .right-container .summary-final .order-container .secure-container .divisor {
+  height: 30px;
+  width: 1px;
+  background-color: #6d6d6d;
+}
+.payment-container .payment-inner-container .content-container .right-container .summary-final .order-container .secure-container .secure {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3px;
+}
+.payment-container .payment-inner-container .content-container .right-container .summary-final .order-container .secure-container .secure .header {
+  font-family: "SFProDisplayBold";
+}
+.payment-container .payment-inner-container .content-container .right-container .summary-final .order-container .secure-container .secure .sub-header {
+  font-family: "SFProDisplayReg";
+  font-size: 0.9rem;
+  color: #a5a5a5;
+}
+.payment-container .payment-inner-container .content-container .right-container .pay-container {
+  background-color: #323232;
+  box-shadow: 0px -31px 22px -7px rgba(0, 0, 0, 0.2);
+  padding: 20px 30px 60px 30px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  position: sticky;
+  bottom: 20px;
+}
+.payment-container .payment-inner-container .content-container .right-container .pay-container .total-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.payment-container .payment-inner-container .content-container .right-container .pay-container .total-container .text {
+  font-family: "SFProDisplayBold";
+}
+.payment-container .payment-inner-container .content-container .right-container .pay-container .total-container .price {
+  font-family: "SFProDisplayBold";
+  font-size: 1.5rem;
+}
+.payment-container .payment-inner-container .content-container .right-container .pay-container .pay-button {
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 15px;
+  background-color: #01D47A;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "DTphuduMedium";
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.payment-container .payment-inner-container .content-container .right-container .pay-container .pay-button:hover {
+  background-color: #02f089;
+  transition: 0.3s;
+}
+.payment-container .payment-inner-container .content-container .right-container .policy {
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.payment-container .payment-inner-container .content-container .right-container .policy p {
+  text-align: center;
+  font-family: "SFProDisplayReg";
+  color: #999999;
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+}
+.payment-container .payment-inner-container .content-container .right-container .policy p .link {
+  font-family: "SFProDisplayReg";
+  color: #6d6d6d;
+  text-decoration: underline;
+}/*# sourceMappingURL=payment.css.map */

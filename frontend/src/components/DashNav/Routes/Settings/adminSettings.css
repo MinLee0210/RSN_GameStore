@@ -1,0 +1,58 @@
+.settings-container {
+  width: 100%;
+  display: flex;
+}
+.settings-container .left-nav-container {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+.settings-container .left-nav-container .section {
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+}
+.settings-container .left-nav-container .section:hover .header {
+  color: #01D47A;
+  transition: 0.2s ease-in;
+}
+.settings-container .left-nav-container .section.info .header {
+  color: #01D47A;
+}
+.settings-container .left-nav-container .section.profile .header {
+  color: #01D47A;
+}
+.settings-container .left-nav-container .section.privacy .header {
+  color: #01D47A;
+}
+.settings-container .left-nav-container .section .icon {
+  font-size: 25px;
+}
+.settings-container .left-nav-container .section .content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+.settings-container .left-nav-container .section .content .header {
+  font-family: "SFProTextBold";
+}
+.settings-container .left-nav-container .section .content .text {
+  font-family: "SFProDisplayReg";
+  color: #a5a5a5;
+  font-size: 1rem;
+}
+.settings-container .right-container {
+  width: 100%;
+  display: flex;
+  -moz-column-gap: 60px;
+       column-gap: 60px;
+}
+.settings-container .right-container .vertical-space {
+  width: 1px;
+  height: 100%;
+  background-color: #3D3D3D;
+}/*# sourceMappingURL=adminSettings.css.map */

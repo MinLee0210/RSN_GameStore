@@ -1,0 +1,67 @@
+@import '../../../../variables';
+
+.order-mini-container{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    .order-mini{
+        width: 100%;
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        .order-content{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .order-info{
+                display: flex;
+                column-gap: 20px;
+                .order-image{
+                    height: 100px;
+                    width: 160px;
+                    border-radius: 8px;
+                    overflow: clip;
+
+                    img{
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                }
+
+                .order-details{
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 15px;
+                    .title{
+                        font-family: "SFProDisplayBold";
+                        font-size: 1.2rem;
+                    }
+                    .order-specs{
+                        display: flex;
+                        flex-direction: column;
+                        row-gap: 5px;
+                        font-family: "SFProDisplayReg";
+                        color: #a5a5a5;
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+
+            .price{
+                font-family: "SFProDisplayReg";
+                color: #a5a5a5;
+            }
+        }
+
+        .spacer{
+            height: 1px;
+            width: 100%;
+            background-color: #474747;
+        }
+    }
+}

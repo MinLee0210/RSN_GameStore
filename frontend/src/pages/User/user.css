@@ -1,0 +1,55 @@
+.user-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.user-container .user-inner-container {
+  position: relative;
+  width: 100%;
+  padding-left: 150px;
+  padding-right: 150px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.user-container .user-inner-container .user-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 30px;
+}
+.user-container .user-inner-container .user-top .avatar-container {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #323232;
+  border-radius: 12px;
+  transition: 0.4s;
+  border: transparent;
+}
+.user-container .user-inner-container .user-top .avatar-container .icon {
+  font-size: 65px;
+  color: white;
+}
+.user-container .user-inner-container .user-top .avatar-container:hover {
+  border: 1px solid #01D47A;
+  transition: 0.4s;
+}
+.user-container .user-inner-container .user-top .title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 15px;
+}
+.user-container .user-inner-container .user-top .title-container .title {
+  font-family: "SFProTextBold";
+  font-size: 2rem;
+}
+.user-container .user-inner-container .user-top .title-container .date {
+  font-family: "SFProTextReg";
+  color: #a5a5a5;
+}/*# sourceMappingURL=user.css.map */

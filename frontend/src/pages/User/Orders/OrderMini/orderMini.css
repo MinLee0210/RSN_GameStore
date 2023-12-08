@@ -1,0 +1,64 @@
+.order-mini-container {
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.order-mini-container .order-mini {
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.order-mini-container .order-mini .order-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.order-mini-container .order-mini .order-content .order-info {
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+.order-mini-container .order-mini .order-content .order-info .order-image {
+  height: 100px;
+  width: 160px;
+  border-radius: 8px;
+  overflow: clip;
+}
+.order-mini-container .order-mini .order-content .order-info .order-image img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.order-mini-container .order-mini .order-content .order-info .order-details {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+.order-mini-container .order-mini .order-content .order-info .order-details .title {
+  font-family: "SFProDisplayBold";
+  font-size: 1.2rem;
+}
+.order-mini-container .order-mini .order-content .order-info .order-details .order-specs {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  font-family: "SFProDisplayReg";
+  color: #a5a5a5;
+  font-size: 1.2rem;
+}
+.order-mini-container .order-mini .order-content .price {
+  font-family: "SFProDisplayReg";
+  color: #a5a5a5;
+}
+.order-mini-container .order-mini .spacer {
+  height: 1px;
+  width: 100%;
+  background-color: #474747;
+}/*# sourceMappingURL=orderMini.css.map */

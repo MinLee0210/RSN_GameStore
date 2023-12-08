@@ -1,0 +1,78 @@
+.edit-item-container {
+  height: 120px;
+  width: 100%;
+  background-color: #323232;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  transition: 0.2s ease-out;
+}
+.edit-item-container.deleted {
+  display: none;
+}
+.edit-item-container:hover {
+  background-color: #3D3D3D;
+  transition: 0.2s ease-out;
+}
+.edit-item-container .left-container {
+  height: 100%;
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+.edit-item-container .left-container .image-container {
+  height: 100%;
+  width: 200px;
+  background-color: #A5A5A5;
+  border-radius: 8px;
+  overflow: clip;
+}
+.edit-item-container .left-container .image-container img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.edit-item-container .left-container .info-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  justify-content: center;
+  font-family: "SFProTextReg";
+  color: #A5A5A5;
+}
+.edit-item-container .left-container .info-container .title {
+  font-family: "SFProTextBold";
+  font-size: 1.2rem;
+  color: white;
+}
+.edit-item-container .right-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  padding-right: 20px;
+}
+.edit-item-container .right-container .edit-button {
+  background-color: transparent;
+  border: 1px solid #A5A5A5;
+  border-radius: 8px;
+  width: 80px;
+  text-align: center;
+  padding: 10px;
+  font-family: "DTphuduMedium";
+  color: white;
+}
+.edit-item-container .right-container .edit-button:hover {
+  border-color: #01D47A;
+}
+.edit-item-container .right-container .delete-button {
+  background-color: #DC2938;
+  width: 80px;
+  text-align: center;
+  padding: 10px;
+}
+.edit-item-container .right-container .delete-button:hover {
+  background-color: #e04956;
+}/*# sourceMappingURL=editItem.css.map */

@@ -1,0 +1,87 @@
+@import '../../../variables';
+.cart-item{
+    width: 100%;
+    height: 160px;
+    background-color: #323232;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+
+    &.deleted {
+        display: none;
+    }
+    
+    .left{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        column-gap: 20px;
+        align-items: center;
+        .thumb{
+            width: 180px;
+            height: 100%;
+            border-radius: 8px;
+            overflow: hidden;
+            img{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .info{
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+            h1{
+                font-size: 1.2rem;
+            }
+
+            span{
+                font-family: "SFProDisplayReg";
+                font-size: 0.9rem;
+                color: #a5a5a5;
+            }
+
+            .bottom{
+                display: flex;
+                align-items: center;
+                column-gap: 10px;
+                margin-top: 15px;
+                .icon{
+                    color: #a5a5a5;
+                    font-size: 16px;
+                    cursor: pointer;
+                    transition: 0.2s;
+                    &:hover{
+                        color: white;
+                        transition: 0.2s;
+                    }
+                }
+
+                .spacer{
+                    width: 1px;
+                    height: 15px;
+                    background-color: #a5a5a5;
+                }
+
+                .wishlist{
+                    font-family: "SFProDisplayReg";
+                    color: #a5a5a5;
+                    font-size: 0.9rem;
+                    cursor: pointer;
+                }
+            }
+        }
+        
+    }
+
+    .right{
+        span{
+            font-family: "DTphuduMedium";
+            font-size: 1.4rem;
+        }
+    }
+}

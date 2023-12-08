@@ -1,0 +1,343 @@
+@import '../../_variables.scss';
+
+.pseudo-nav-container{
+    height: 80px;
+    max-height: 80px;
+    width: 100%;
+    position: fixed;
+    z-index: 1200;
+    transition: 0.1s ;
+
+    .shadow{
+        display: none;
+
+        &.active{
+            display: block;
+            position: absolute;
+            height: 100vh;
+            width: 100%;
+            top: 0;
+            background-color: #101010;
+            opacity: 0.3;
+            z-index: -10;
+        }
+    }
+
+    .logo-container-one{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 35px;
+        #logo{
+            height: 100%;
+        }
+        z-index: 23;
+
+    }
+
+    .nav-container{ 
+        display: flex;
+        flex-direction: row;
+        background-color: transparent;
+        height: 80px;
+        max-height: 80px;
+        position: fixed;
+        width: 100%;
+        padding-left: 30px;
+        padding-right: 30px;
+        align-items: center;
+        justify-content: space-between;
+        transition: 0.2s ease;
+
+        // .language-container{
+        //     cursor: pointer;
+        //     .dropdown-menu{
+        //         position: absolute;
+        //         width: 150px;
+        //         height: 80px;
+        //         background-color: #272727;
+        //         border-radius: 5px;
+        //         transform: translate(50px, -35px);
+        //         display: flex;
+        //         flex-direction: column;
+        //         padding-top: 20px;
+        //         padding-left: 30px;
+        //         padding-bottom: 20px;
+        //         padding-right: 20px;
+        //         justify-content: space-between;
+        //         h3{
+        //             color: #ffffff;
+        //             font-family: "SFProTextReg";
+        //             font-size: 1;
+        //         }
+        //     }
+        // }
+
+
+        
+
+        .left-nav{
+            width: 80px;
+            // background-color: #01D47A;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .icon{
+                &.globe{
+                    height: 22px;
+                    width: 22px;
+                }
+            }
+            
+
+            .admin{
+                display: none;
+                
+                &.active{
+                    display: flex;
+                    align-items: center;
+                    &:hover{
+                        .adminIcon{
+                            color: #01D47A;
+                            transition: 0.4s;
+                        }
+                    }
+                    
+                    
+                    .adminIcon{
+                        height: 24px;
+                        width: 24px;
+                        color: #ffffff;
+                        transition: 0.4s;
+                    }
+                }
+            }
+            
+        }
+
+        &.active{
+            background-color: #101010;
+            animation: fadeIn 0.1s;
+        }
+
+        .icon{
+            color: #ffffff;
+            height: 25px;
+            width: 25px;
+        }
+
+        .logo-container{
+            height: 35px;
+            #logo{
+                height: 100%;
+            }
+        }
+
+        .right-nav{
+            display: flex;
+            width: max-content;
+            align-items: center;
+            column-gap: 30px;
+            .search-bar{
+                height: max-content;
+                width: max-content;
+
+                .icon{
+                    color: #ffffff;
+                    height: 25px;
+                    width: 25px;
+                    cursor: pointer;
+                    &:hover{
+                        color: #01D47A;
+                        transition: 0.4s;
+                    }
+    
+                }
+                transition: 0.4s ease;
+                .search-input{
+                    height: 30px;
+                    width: 200px;
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    transition: 0.4s ease;
+                    .search-field{
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 8px;
+                        border-radius: 8px;
+                        outline: none;
+                        background-color: #242424;
+                        padding: 15px;
+                        box-shadow: inset 0 0 0 2px #3D3D3D;
+                        transition: 0.2s;
+                        border: 0;
+                        font-family: "SFProTextReg";
+                        color: #ffffff;
+                        transition: 0.2s;
+                        border: 2px solid $clr-green;
+                        font-family: "SFProTextReg";
+                        color: #ffffff;
+                    }
+
+                    .cancel{
+                        position: absolute;
+                        right: 0;
+                        margin-right: 10px;
+                        font-size: 25px;
+                        cursor: pointer;    
+                        color: white;
+
+                    }
+                }
+            }
+            .icon{
+                color: #ffffff;
+                height: 25px;
+                width: 25px;
+                transition: 0.4s;
+                cursor: pointer;
+                &:hover{
+                    color: #01D47A;
+                    transition: 0.4s;
+                }
+
+            }
+
+            .indicator{
+                background-color: $clr-green;
+                position: absolute;
+                margin-left: 18px;
+                width: 18px;
+                height: 18px;
+                transform: translateY(-5px);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 100px;
+                z-index: 1000000;
+                label{
+                    font-family: "SFProTextReg";
+                    color: white;
+                    font-size: 0.8rem;
+                }
+
+
+            }
+
+            .login-button{
+                cursor: pointer;
+                width: max-content;
+                height: max-content;
+                background-color: transparent;
+                padding: 0;
+                border: 0;
+            }
+
+            .profile-container{   
+                width: max-content;
+                height: max-content;
+                position: relative;
+                .icon{
+                    cursor: pointer;
+
+                    &.active{
+                        color: $clr-green;
+                    }
+                }
+
+                
+
+                .profile-dropdown-container{
+                    display: none;
+                    &.active{
+                        position: absolute;
+                        padding: 25px;
+                        width: 200px;
+                        background: rgba(0, 0, 0, 0.05);
+                        backdrop-filter: blur( 20px );
+                        -webkit-backdrop-filter: blur( 14px );
+                        left: -175px;
+                        border-radius: 12px;
+                        margin-top: 25px;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 20px;
+                        z-index: 20000;
+
+                        .dropdown-button{
+                            font-family: "SFProTextBold";
+                            color: #ffffff;
+                            transition: 0.2s;
+                            &:hover{
+                                transition: 0.2s;
+                                color: $clr-green;
+                            }
+                        }
+
+                        .signout-button{
+                            background-color: transparent;
+                            font-family: "SFProTextBold";
+                            border: 0;
+                            color: #ffffff;
+                            text-align: left;
+                            cursor: pointer;
+                            padding: 0;
+                            transition: 0.2s;
+                            &:hover{
+                                transition: 0.2s;
+                                color: $clr-green;
+                            }
+                        }
+
+                        .space{
+                            height: 1px;
+                            width: 110%;
+                            background-color: #676767;
+                            align-self: center;
+                        }
+                    }
+                }
+            }
+        }
+
+        
+    }
+
+    
+
+    .login-container{
+        .top-container{
+            
+            .cancel-button{
+                cursor: pointer;
+                width: max-content;
+                height: max-content;
+                background-color: transparent;
+                padding: 0;
+                border: 0; 
+            }
+        }
+        
+    }
+
+    @keyframes fadeIn {
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
+    }
+
+    @keyframes fadeOut {
+        from{
+            opacity: 1;
+        }
+        to{
+            opacity: 0;
+        }
+    }
+}

@@ -1,0 +1,48 @@
+.loading-container{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background-color: #101010;
+    z-index: 10000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 50px;
+
+    @keyframes loadOut {
+        from{
+            opacity: 1;
+            z-index: 2000;
+        }
+        to{
+            opacity: 0;
+            z-index: -1;
+        }
+    }
+
+    &.disabled{
+        animation: loadOut 0.5s forwards;
+        
+    }
+
+    // display: none;
+    .loading-logo{
+        height: max-content;
+        width: 200px;
+        position: relative;
+        
+
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+
+    .loading-bar{
+        height: 2px;
+        width: 200px;
+        
+    }
+}

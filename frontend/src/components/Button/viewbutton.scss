@@ -1,0 +1,15 @@
+.button{
+    color: #ffffff;
+    background-color: #3D3D3D;
+    padding: 0.8rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    border-radius: 8px;
+    font-family: "DTphuduMedium";
+    transition: 0.2s;
+    font-size: 1rem;
+    &:hover{
+        background-color: #01D47A;
+        transition: 0.2s;
+    }
+}

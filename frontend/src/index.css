@@ -1,0 +1,81 @@
+@font-face {
+    font-family: "SFProRoundedReg";
+    src: local("SFPro"),
+    url("../../frontend/public/fonts/SFProRounded-Regular.otf") format("opentype");
+    }
+
+@font-face {
+    font-family: "SFProRoundedBold";
+    src: local("SFPro"),
+    url("../public/fonts/SFProRounded-Bold.otf") format("opentype");
+    }
+
+@font-face {
+    font-family: "SFProTextReg";
+    src: local("SFPro"),
+    url("../public/fonts/SFProText-Regular.otf") format("opentype");
+    }
+
+@font-face {
+    font-family: "SFProTextMedium";
+    src: local("SFPro"),
+    url("../public/fonts/SFProText-Medium.otf") format("opentype");
+    }
+
+@font-face {
+    font-family: "SFProDisplayReg";
+    src: local("SFPro"),
+    url("../public/fonts/SFProDisplay-Regular.otf") format("opentype");
+    }
+
+@font-face {
+    font-family: "SFProDisplayBold";
+    src: local("SFPro"),
+    url("../public/fonts/SFProDisplay-Bold.otf") format("opentype");
+    }
+
+@font-face {
+    font-family: "SFProTextBold";
+    src: local("SFPro"),
+    url("../public/fonts/SFProText-Bold.otf") format("opentype");
+    }
+
+@font-face {
+  font-family: "DTPhudu";
+  src: local("DTPhudu"),
+  url("../public/fonts/DTPhudu-Bold.otf") format("opentype");
+  }
+@font-face {
+  font-family: "DTPhuduReg";
+  src: local("DTPhudu"),
+  url("../public/fonts/DTPhudu-Regular.otf") format("opentype");
+  }
+
+@font-face {
+  font-family: "DTPhuduMedium";
+  src: local("DTPhudu"),
+  url("../public/fonts/DTPhudu-Medium.otf") format("opentype");
+  }
+
+*{
+  margin-block: 0;
+  box-sizing: border-box;
+  font-size: 14px;
+
+}
+
+a{
+  text-decoration: none;
+}
+
+h1{
+  font-family: "DTPhudu";
+  letter-spacing: 0.05rem;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "SFProTextReg";
+}
+

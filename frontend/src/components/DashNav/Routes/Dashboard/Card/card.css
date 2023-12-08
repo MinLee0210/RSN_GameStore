@@ -1,0 +1,9 @@
+.card-container {
+  height: 250px;
+  width: 285px;
+  background-color: #323232;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}/*# sourceMappingURL=card.css.map */

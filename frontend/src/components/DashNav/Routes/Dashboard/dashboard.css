@@ -1,0 +1,12 @@
+.dashboard-overview-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+.dashboard-overview-container .dashboard-level {
+  height: 250px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}/*# sourceMappingURL=dashboard.css.map */

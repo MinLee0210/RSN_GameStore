@@ -1,0 +1,119 @@
+.edit-form-container {
+  margin-left: 150px;
+  margin-right: 150px;
+}
+.edit-form-container .header-container {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.edit-form-container .header-container .back {
+  font-size: 25px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.edit-form-container .header-container .back:hover {
+  color: #01D47A;
+  transition: 0.2s;
+}
+.edit-form-container .product-container {
+  display: flex;
+}
+.edit-form-container .product-container .product-left-container {
+  height: 400px;
+  width: 640px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.edit-form-container .product-container .product-left-container .product-image {
+  height: 100%;
+  width: 100%;
+}
+.edit-form-container .product-container .product-left-container .product-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.edit-form-container .product-container .product-right-container {
+  height: 400px;
+  width: 520px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+.edit-form-container .product-container .product-right-container .product-info-level-one {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+.edit-form-container .product-container .product-right-container .product-info-level-one label {
+  font-family: "SFProTextBold";
+  color: #A5A5A5;
+}
+.edit-form-container .product-container .product-right-container .product-info-level-one label span {
+  font-family: "SFProTextReg";
+}
+.edit-form-container .product-container .product-right-container .product-info-level-one h1 {
+  font-size: 2rem;
+}
+.edit-form-container .product-container .product-right-container .space {
+  height: 0.5px;
+  width: 100%;
+  background-color: #A5A5A5;
+}
+.edit-form-container .product-container .product-right-container .product-info-level-two {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.edit-form-container .product-container .product-right-container .product-info-level-two .cell {
+  display: flex;
+}
+.edit-form-container .product-container .product-right-container .product-info-level-two .cell label {
+  font-family: "SFProTextBold";
+  color: #A5A5A5;
+  min-width: 120px;
+}
+.edit-form-container .product-container .product-right-container .product-info-level-two .cell span {
+  font-family: "SFProTextReg";
+  color: white;
+}
+.edit-form-container .product-container .product-right-container .product-container-level-three {
+  display: flex;
+  -moz-column-gap: 25px;
+       column-gap: 25px;
+  position: absolute;
+  justify-content: space-between;
+  bottom: 0;
+}
+.edit-form-container .product-container .product-right-container .product-container-level-three .button {
+  border: 0;
+  height: 50px;
+  padding: 10px;
+  cursor: pointer;
+  width: 200px;
+}
+.edit-form-container .product-container .product-right-container .product-container-level-three .button.view {
+  background-color: transparent;
+  border: solid 1px #A5A5A5;
+  padding-left: 20px;
+  padding-right: 20px;
+  transition: 0.2s;
+}
+.edit-form-container .product-container .product-right-container .product-container-level-three .button.view:hover {
+  background-color: #01D47A;
+  border: solid 1px #01D47A;
+  transition: 0.2s;
+}
+.edit-form-container .product-container .product-right-container .product-container-level-three .button.delete {
+  background-color: #DC2938;
+  padding-left: 20px;
+  padding-right: 20px;
+  transition: 0.2s;
+}
+.edit-form-container .product-container .product-right-container .product-container-level-three .button.delete:hover {
+  background-color: #e04956;
+  transition: 0.2s;
+}/*# sourceMappingURL=editform.css.map */

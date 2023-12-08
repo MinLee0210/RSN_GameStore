@@ -1,0 +1,198 @@
+@import '../../variables';
+
+.footer-container{
+    height: 80vh;
+    background-color: #101010;
+    padding-top: 40px;
+    .footer-child-container{
+        height: 100%;
+        margin-left: 165px;
+        margin-right: 165px;
+        display: flex;
+        flex-direction: column;
+        .footer-top{
+            height: 85%;
+            display: flex;
+            justify-content: space-between;
+            &-left{
+                height: 90%;
+                width: 45%;
+                display: flex;
+                align-items: center;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                    
+                }
+            }
+
+            &-right{
+                height: 100%;
+                width: 45%;
+                display: flex;
+                flex-direction: column;
+                
+                .footer-top-upper{
+                    height: 70%;
+                    padding-top: 5%;
+                    h1{
+                        font-size: 1.5rem;
+                        span{
+                            font-family: "DTphudu";
+                            font-size: 1.5rem;
+                            color: #01D47A;
+                        }
+                    }
+
+                    .links-container{
+                        display: flex;
+                        flex-direction: column;
+                        margin-top: 40px;
+                        height: 20vh;
+                        justify-content: space-between;
+
+                        a{
+                            font-family: "SFProTextReg";
+                            text-decoration: none;
+                            color: #A5A5A5;
+                            font-size: 1rem;
+                            width: max-content;
+                            transition: 0.4s;
+                            
+                            &:hover{
+                                color: $clr-green;
+                                transition: 0.4s;
+                            }
+                        }
+                    }
+                }
+
+                .footer-top-lower{
+                    height: 30%;
+                    display: flex;
+                    justify-content: space-between;
+                    .social-container{
+                        width: 45%;
+                        height: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        a{
+                            color: #ffffff;
+                            transition: 0.4s;
+                            .social-icon{
+                                height: 25px;
+                                width: 25px;
+
+                                
+                            }
+
+                            #facebook{
+                                height: 20px;
+                                width: 20px;
+                                transition: 0.2s;
+                                &:hover{
+                                    color: #2374E1;
+                                    transition: 0.2s;
+                                }
+                            }
+
+                            #youtube{
+                                transition: 0.2s;
+                                &:hover{
+                                    color: #FF0000;
+                                    transition: 0.2s;
+                                }
+                            }
+
+                            #discord{
+                                transition: 0.2s;
+                                &:hover{
+                                    color: #5865F2;
+                                    transition: 0.2s;
+                                }
+                            }
+                            #twitch{
+                                height: 25px;
+                                width: 25px;
+                                transition: 0.2s;
+                                &:hover{
+                                    transition: 0.2s;
+                                    color: #9046FF;
+                                }
+                            }
+
+                            #twitter{
+                                transition: 0.2s;
+                                &:hover{
+                                    transition: 0.2s;
+                                    color: #1D9BF0;
+                                }
+                            }
+
+                            
+                        }
+                    }
+
+                    .logo-container{
+                        width: 10rem;
+                        height: 100%;
+
+                        img{
+                            position: relative;
+                            top: 50%;
+                            transform: translateY(-75%);
+                            width: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                }
+            }
+            
+        }
+
+        .footer-bottom{
+            height: 16%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+            .footer-content-container{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                h1{
+                    font-family: "SFProRoundedReg";
+                    font-weight: 100;
+                    font-size: 1rem;
+                }
+                .region-container{
+                    display: flex;
+                    justify-content: space-between;
+                    width: 150px;
+                    height: 100%;
+
+                    .globe{
+                        width: 20px;
+                        height: 20px;
+                    }
+
+                    .small-space{
+                        height: 100%;
+                        width: 1px;
+                        background-color: #323232;
+                    }
+                }
+            }
+            
+        }
+
+        .space{
+            width: 100%;
+            height: 1px;
+            background-color: #323232;
+        }
+    }
+}

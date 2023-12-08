@@ -1,0 +1,380 @@
+.branding-container {
+  height: auto;
+  border: 1px solid black;
+  font-size: 15px;
+}
+.branding-container .brand-container {
+  height: 420px;
+  width: 100%;
+  background-color: white;
+  position: relative;
+  padding-left: 150px;
+  padding-right: 150px;
+  display: flex;
+  align-items: center;
+}
+.branding-container .brand-container .text-container {
+  height: 100%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 60px;
+}
+.branding-container .brand-container .text-container h1 {
+  font-family: DTphudu;
+  color: #01D47A;
+  font-size: 5rem;
+  margin-bottom: 10px;
+}
+.branding-container .brand-container .text-container p {
+  font-family: SFProTextReg;
+  color: #101010;
+  font-size: 1.2rem;
+  line-height: 25px;
+}
+.branding-container .brand-container .logo-image-container {
+  height: 100%;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.branding-container .brand-container .logo-image-container .image-container {
+  width: 250px;
+  height: 250px;
+}
+.branding-container .brand-container .logo-image-container .image-container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.branding-container .logo-container {
+  background-color: #272727;
+  height: -moz-max-content;
+  height: max-content;
+  padding-top: 120px;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+.branding-container .logo-container .our-logo-container {
+  margin-bottom: 80px;
+}
+.branding-container .logo-container .our-logo-container h1 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+.branding-container .logo-container .our-logo-container p {
+  font-family: SFProTextReg;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+.branding-container .logo-container .our-logo-container .our-logo-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  justify-content: space-between;
+}
+.branding-container .logo-container .our-logo-container .our-logo-flex .our-logo-flexitem {
+  width: 375px;
+  height: 160px;
+  border: 2px solid #373a3d;
+  border-radius: 8px;
+  position: relative;
+  padding: 30px 0 40px;
+}
+.branding-container .logo-container .our-logo-container .our-logo-flex .our-logo-flexitem img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.branding-container .logo-container .our-logo-container .our-logo-flex .our-logo-flexitem .svg,
+.branding-container .logo-container .our-logo-container .our-logo-flex .our-logo-flexitem .png {
+  position: absolute;
+  color: #01D47A;
+  font-family: SFProTextReg;
+  font-size: 15px;
+  bottom: 5px;
+}
+.branding-container .logo-container .our-logo-container .our-logo-flex .our-logo-flexitem .png {
+  right: 10px;
+}
+.branding-container .logo-container .our-logo-container .our-logo-flex .our-logo-flexitem .svg {
+  right: 50px;
+}
+.branding-container .logo-container .our-logo-container .our-logo-flex :nth-child(1),
+.branding-container .logo-container .our-logo-container .our-logo-flex :nth-child(3) {
+  background: url("https://assets-global.website-files.com/6257adef93867e50d84d30e2/62594f6abf11bb058da52ecb_bg.png");
+}
+.branding-container .logo-container .our-logo-container .our-logo-flex :nth-child(1) .svg,
+.branding-container .logo-container .our-logo-container .our-logo-flex :nth-child(3) .svg {
+  background: url("https://assets-global.website-files.com/6257adef93867e50d84d30e2/62594f6abf11bb058da52ecb_bg.png") !important;
+}
+.branding-container .logo-container .our-logo-container .our-logo-flex :nth-child(2) {
+  background: url("https://assets-global.website-files.com/6257adef93867e50d84d30e2/625950f8da1880cda1a94346_bg-w.png");
+}
+.branding-container .logo-container .our-logo-container .our-logo-flex :nth-child(2) img {
+  background: url("https://assets-global.website-files.com/6257adef93867e50d84d30e2/625950f8da1880cda1a94346_bg-w.png");
+}
+.branding-container .logo-container .our-logo-container .our-logo-flex :nth-child(2) .png {
+  background: url("https://assets-global.website-files.com/6257adef93867e50d84d30e2/625950f8da1880cda1a94346_bg-w.png");
+}
+.branding-container .logo-container .our-logo-container .our-logo-flex :nth-child(2) .svg {
+  background: url("https://assets-global.website-files.com/6257adef93867e50d84d30e2/625950f8da1880cda1a94346_bg-w.png");
+}
+.branding-container .logo-container .alt-logo-container {
+  margin-bottom: 80px;
+}
+.branding-container .logo-container .alt-logo-container h1 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+.branding-container .logo-container .alt-logo-container h2 {
+  font-family: DTPhudu;
+  font-size: 32px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.branding-container .logo-container .alt-logo-container p {
+  font-family: SFProTextReg;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+.branding-container .logo-container .alt-logo-container .alt-logo-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  justify-content: space-between;
+}
+.branding-container .logo-container .alt-logo-container .alt-logo-flex .alt-logo-flexitem {
+  width: 375px;
+  height: 240px;
+  border: 2px solid #373a3d;
+  border-radius: 8px;
+  position: relative;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.branding-container .logo-container .alt-logo-container .alt-logo-flex .alt-logo-flexitem .alt1,
+.branding-container .logo-container .alt-logo-container .alt-logo-flex .alt-logo-flexitem .alt2,
+.branding-container .logo-container .alt-logo-container .alt-logo-flex .alt-logo-flexitem .alt3 {
+  width: 90px;
+  height: 90px;
+}
+.branding-container .logo-container .alt-logo-container .alt-logo-flex .alt-logo-flexitem .alt1 img,
+.branding-container .logo-container .alt-logo-container .alt-logo-flex .alt-logo-flexitem .alt2 img,
+.branding-container .logo-container .alt-logo-container .alt-logo-flex .alt-logo-flexitem .alt3 img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.branding-container .logo-container .alt-logo-container .alt-logo-flex .alt-logo-flexitem .alt4,
+.branding-container .logo-container .alt-logo-container .alt-logo-flex .alt-logo-flexitem .alt5,
+.branding-container .logo-container .alt-logo-container .alt-logo-flex .alt-logo-flexitem .alt6 {
+  width: 80px;
+  height: 120px;
+}
+.branding-container .logo-container .alt-logo-container .alt-logo-flex .alt-logo-flexitem .alt4 img,
+.branding-container .logo-container .alt-logo-container .alt-logo-flex .alt-logo-flexitem .alt5 img,
+.branding-container .logo-container .alt-logo-container .alt-logo-flex .alt-logo-flexitem .alt6 img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.branding-container .logo-container .alt-logo-container .alt-logo-flex .alt-logo-flexitem .svg,
+.branding-container .logo-container .alt-logo-container .alt-logo-flex .alt-logo-flexitem .png {
+  position: absolute;
+  color: #01D47A;
+  font-family: SFProTextReg;
+  font-size: 15px;
+  bottom: 5px;
+}
+.branding-container .logo-container .alt-logo-container .alt-logo-flex .alt-logo-flexitem .png {
+  right: 10px;
+}
+.branding-container .logo-container .alt-logo-container .alt-logo-flex .alt-logo-flexitem .svg {
+  right: 50px;
+}
+.branding-container .logo-container .alt-logo-container .alt-logo-flex :nth-child(1),
+.branding-container .logo-container .alt-logo-container .alt-logo-flex :nth-child(3) {
+  background: url("https://assets-global.website-files.com/6257adef93867e50d84d30e2/62594f6abf11bb058da52ecb_bg.png");
+}
+.branding-container .logo-container .alt-logo-container .alt-logo-flex :nth-child(1) .svg,
+.branding-container .logo-container .alt-logo-container .alt-logo-flex :nth-child(3) .svg {
+  background: url("https://assets-global.website-files.com/6257adef93867e50d84d30e2/62594f6abf11bb058da52ecb_bg.png") !important;
+}
+.branding-container .logo-container .alt-logo-container .alt-logo-flex :nth-child(2) {
+  background: url("https://assets-global.website-files.com/6257adef93867e50d84d30e2/625950f8da1880cda1a94346_bg-w.png");
+}
+.branding-container .logo-container .alt-logo-container .alt-logo-flex :nth-child(2) img {
+  background: url("https://assets-global.website-files.com/6257adef93867e50d84d30e2/625950f8da1880cda1a94346_bg-w.png");
+}
+.branding-container .logo-container .alt-logo-container .alt-logo-flex :nth-child(2) .png {
+  background: url("https://assets-global.website-files.com/6257adef93867e50d84d30e2/625950f8da1880cda1a94346_bg-w.png");
+}
+.branding-container .logo-container .alt-logo-container .alt-logo-flex :nth-child(2) .svg {
+  background: url("https://assets-global.website-files.com/6257adef93867e50d84d30e2/625950f8da1880cda1a94346_bg-w.png");
+}
+.branding-container .logo-container .alt-logo-container .alt-logo-flex :nth-child(4),
+.branding-container .logo-container .alt-logo-container .alt-logo-flex :nth-child(6) {
+  background: url("https://assets-global.website-files.com/6257adef93867e50d84d30e2/62594f6abf11bb058da52ecb_bg.png");
+}
+.branding-container .logo-container .alt-logo-container .alt-logo-flex :nth-child(4) .svg,
+.branding-container .logo-container .alt-logo-container .alt-logo-flex :nth-child(6) .svg {
+  background: url("https://assets-global.website-files.com/6257adef93867e50d84d30e2/62594f6abf11bb058da52ecb_bg.png") !important;
+}
+.branding-container .logo-container .alt-logo-container .alt-logo-flex :nth-child(5) {
+  background: url("https://assets-global.website-files.com/6257adef93867e50d84d30e2/625950f8da1880cda1a94346_bg-w.png");
+}
+.branding-container .logo-container .alt-logo-container .alt-logo-flex :nth-child(5) img {
+  background: url("https://assets-global.website-files.com/6257adef93867e50d84d30e2/625950f8da1880cda1a94346_bg-w.png");
+}
+.branding-container .logo-container .alt-logo-container .alt-logo-flex :nth-child(5) .png {
+  background: url("https://assets-global.website-files.com/6257adef93867e50d84d30e2/625950f8da1880cda1a94346_bg-w.png");
+}
+.branding-container .logo-container .alt-logo-container .alt-logo-flex :nth-child(5) .svg {
+  background: url("https://assets-global.website-files.com/6257adef93867e50d84d30e2/625950f8da1880cda1a94346_bg-w.png");
+}
+.branding-container .logo-container .spacing-container {
+  margin-bottom: 80px;
+}
+.branding-container .logo-container .spacing-container h1 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+.branding-container .logo-container .spacing-container p {
+  font-family: SFProTextReg;
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+.branding-container .logo-container .spacing-container .spacing-flex {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 240px;
+  justify-content: center;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+.branding-container .logo-container .spacing-container .spacing-flex .spacing1 {
+  height: 100%;
+  width: 480px;
+}
+.branding-container .logo-container .spacing-container .spacing-flex .spacing2 {
+  width: 200px;
+  height: 100%;
+}
+.branding-container .logo-container .spacing-container .spacing-flex .spacing-flexitem {
+  height: 100%;
+  border-radius: 8px;
+  position: relative;
+}
+.branding-container .logo-container .spacing-container .spacing-flex .spacing-flexitem .spacing-img1 {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.branding-container .logo-container .spacing-container .spacing-flex .spacing-flexitem .spacing-img2 {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.branding-container .logo-container .color-container {
+  margin-bottom: 80px;
+}
+.branding-container .logo-container .color-container h1 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+.branding-container .logo-container .color-container p {
+  font-family: SFProTextReg;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+.branding-container .logo-container .color-container .color-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  justify-content: space-between;
+}
+.branding-container .logo-container .color-container .color-flex .color-flexitem {
+  width: 377.33px;
+  height: 208px;
+  border: 2px solid #373a3d;
+  border-radius: 8px;
+  position: relative;
+  margin-bottom: 20px;
+  padding: 20px 20px 20px 20px;
+}
+.branding-container .logo-container .color-container .color-flex .color-flexitem h2 {
+  font-size: 32px;
+  font-family: "DTphudu";
+  margin-bottom: 80px;
+}
+.branding-container .logo-container .color-container .color-flex .color-flexitem div {
+  font-size: 20px;
+  font-family: "SFProTextReg";
+}
+.branding-container .logo-container .color-container .color-flex .color-blurple {
+  background-color: #5865f2;
+}
+.branding-container .logo-container .color-container .color-flex .color-green {
+  color: black;
+  background-color: #57f287;
+}
+.branding-container .logo-container .color-container .color-flex .color-yellow {
+  color: black;
+  background-color: #fee75c;
+}
+.branding-container .logo-container .color-container .color-flex .color-fuchsia {
+  background-color: #eb459e;
+}
+.branding-container .logo-container .color-container .color-flex .color-red {
+  background-color: #ed4245;
+}
+.branding-container .logo-container .color-container .color-flex .color-white {
+  color: black;
+  background-color: #ffffff;
+}
+.branding-container .logo-container .color-container .color-flex .color-black {
+  background-color: #000000;
+}
+.branding-container .logo-container .more-container {
+  margin-bottom: 80px;
+}
+.branding-container .logo-container .more-container h1 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+.branding-container .logo-container .more-container p {
+  font-family: SFProTextReg;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+.branding-container .logo-container .more-container button {
+  background-color: #01D47A;
+  width: 150px;
+  height: 51px;
+  color: white;
+  border-radius: 28px;
+  cursor: pointer;
+}/*# sourceMappingURL=branding.css.map */

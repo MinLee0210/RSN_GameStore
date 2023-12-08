@@ -1,0 +1,11 @@
+.headline-container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  align-items: center;
+}
+.headline-container .title {
+  font-size: 1.7rem;
+}/*# sourceMappingURL=headline.css.map */

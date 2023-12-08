@@ -1,0 +1,53 @@
+@import '../../../../variables';
+.wallet-card{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+
+    .icon{
+        color: $clr-green;
+        font-size: 40px;
+    }
+
+    .header{
+        font-family: "SFProTextBold";
+        font-size: 1.2rem;
+    }
+
+    .stats-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: max-content;
+        row-gap: 20px;
+
+        .separator{
+            height: 1px;
+            width: 100%;
+            background-color: #474747;
+        }
+
+        .numbers-container{
+            display: flex;
+            column-gap: 20px;
+
+            .sub-stat{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                row-gap: 5px;
+                
+                .number{
+                    font-family: "SFProTextBold";
+                    font-size:  2rem;
+                }
+
+                .title{
+                    font-family: "SFProTextReg";
+                    color: #a5a5a5;
+                }
+            }
+        }
+    }
+}

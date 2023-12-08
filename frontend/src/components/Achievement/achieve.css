@@ -1,0 +1,57 @@
+.achievement-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  align-items: center;
+}
+.achievement-container .icon {
+  color: #01D47A;
+  font-size: 45px;
+}
+.achievement-container .header {
+  font-family: "SFProTextBold";
+  font-size: 1.2rem;
+}
+.achievement-container .achieve-details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: -moz-max-content;
+  width: max-content;
+  row-gap: 30px;
+}
+.achievement-container .achieve-details-container .spacer {
+  height: 1px;
+  width: 100%;
+  background-color: #474747;
+  margin-bottom: 10px;
+}
+.achievement-container .achieve-details-container .numbers-container {
+  display: flex;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  transform: translateY(-25px);
+}
+.achievement-container .achieve-details-container .numbers-container .sub-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  row-gap: 10px;
+}
+.achievement-container .achieve-details-container .numbers-container .sub-stat .number {
+  font-family: "SFProTextBold";
+  font-size: 1.2rem;
+}
+.achievement-container .achieve-details-container .numbers-container .sub-stat .bar {
+  height: 5px;
+  width: 80px;
+  border-radius: 10px;
+  background-color: #474747;
+  overflow: hidden;
+}
+.achievement-container .achieve-details-container .numbers-container .sub-stat .bar .bar-inner {
+  height: 100%;
+  width: 30%;
+  background-color: #01D47A;
+}/*# sourceMappingURL=achieve.css.map */

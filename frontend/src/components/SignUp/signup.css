@@ -1,0 +1,141 @@
+.sign-up-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #272727;
+}
+.sign-up-container .back {
+  color: #ffffff;
+  font-family: "SFProTextReg";
+}
+.sign-up-container .pseudo-form-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.sign-up-container .pseudo-form-container .sign-up-form-container {
+  height: 80%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 12px;
+}
+.sign-up-container .pseudo-form-container .sign-up-form-container img {
+  width: 80px;
+}
+.sign-up-container .pseudo-form-container .sign-up-form-container span {
+  font-family: "DTphudu";
+  font-size: 2rem;
+  color: #01D47A;
+  position: relative;
+}
+.sign-up-container .pseudo-form-container .sign-up-form-container .form-input-container {
+  display: flex;
+  flex-direction: row;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  height: -moz-max-content;
+  height: max-content;
+  width: 80%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 30px;
+}
+.sign-up-container .pseudo-form-container .sign-up-form-container .form-input-container .section {
+  width: 47%;
+  height: -moz-max-content;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+}
+.sign-up-container .pseudo-form-container .sign-up-form-container .form-input-container .section .opacity {
+  outline: none;
+  background-color: #242424;
+  padding: 15px;
+  box-shadow: inset 0 0 0 2px #3D3D3D;
+  transition: 0.2s;
+  border: 0;
+  font-family: "SFProTextReg";
+  width: 100%;
+  height: 50px;
+}
+.sign-up-container .pseudo-form-container .sign-up-form-container .form-input-container .section label {
+  font-family: "SFProTextReg";
+}
+.sign-up-container .pseudo-form-container .sign-up-form-container .form-input-container .section label.isError {
+  color: #DC2938;
+  margin-top: 10px;
+  margin-left: 12px;
+}
+.sign-up-container .pseudo-form-container .sign-up-form-container .form-input-container .section .input {
+  font-family: "SFProTextReg";
+  display: none;
+}
+.sign-up-container .pseudo-form-container .sign-up-form-container .form-input-container .section .input.isError {
+  display: block;
+  color: #DC2938;
+  margin-top: 10px;
+  margin-left: 12px;
+}
+.sign-up-container .pseudo-form-container .sign-up-form-container .form-input-container .section input {
+  width: 100%;
+  border-radius: 8px;
+  color: #ffffff;
+}
+.sign-up-container .pseudo-form-container .sign-up-form-container .form-input-container .section input:focus {
+  border: 2px solid #01D47A;
+  transition: 0.2s;
+  color: #ffffff;
+}
+.sign-up-container .pseudo-form-container .sign-up-form-container .form-input-container .section input:-webkit-autofill {
+  background-color: #242424;
+}
+.sign-up-container .pseudo-form-container .sign-up-form-container .form-input-container .section input:autofill {
+  background-color: #242424;
+}
+.sign-up-container .pseudo-form-container .sign-up-form-container .form-input-container button {
+  cursor: pointer;
+  border-radius: 8px;
+  grid-column: 1/span 2;
+  background-color: #01D47A;
+  font-family: "SFProTextBold";
+  color: #ffffff;
+  transition: 0.4s;
+  width: 100%;
+  height: 50px;
+}
+.sign-up-container .pseudo-form-container .sign-up-form-container .form-input-container button:hover {
+  background-color: #02f089;
+  transition: 0.4s;
+}
+.sign-up-container .pseudo-form-container .sign-up-form-container .back {
+  font-family: "SFProTextReg";
+  transition: 0.2s;
+}
+.sign-up-container .pseudo-form-container .sign-up-form-container .back:hover {
+  color: #01D47A;
+  transition: 0.2s;
+}
+.sign-up-container .pseudo-form-container .poster {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+.sign-up-container .pseudo-form-container .poster img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.sign-up-container .success-container {
+  position: absolute;
+  height: 100vh;
+  width: 50%;
+  background-color: #272727;
+  left: 0;
+}/*# sourceMappingURL=signup.css.map */

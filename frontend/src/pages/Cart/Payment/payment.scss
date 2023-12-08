@@ -1,0 +1,405 @@
+@import '../../../variables';
+.payment-container{
+    width: 100%;
+    .payment-inner-container{
+        height: 100%;
+        margin-left: 150px;
+        margin-right: 150px;
+        // background-color: #323232;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .step-container{
+            width: 650px;
+            height: 50px;
+            // background-color: #292929;
+            display: flex;
+            font-family: "SFProTextMedium";
+            align-items: center;
+            justify-content: center;
+            .step{
+                display: flex;
+                align-items: center;
+                column-gap: 10px;
+
+                .number{
+                    width: 30px;
+                    height: 30px;
+                    padding: 10px;
+                    border: 3px solid $clr-green;
+                    border-radius: 100px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .spacer{
+                    height: 3px;
+                    width: 100px;
+                    background-color: #3D3D3D;
+                    position: relative;
+                    
+                }
+                &.one{
+                    .number{
+                        background-color: $clr-green;
+
+                        .icon{
+                            color: white;
+                            font-size: 12px;
+                            transform: scale(2.2);
+                        }
+                    }
+                    .text{
+                        color: #6d6d6d;
+                        transition: 0.2s;
+                    }
+
+                    .spacer{
+                        background-color: #3D3D3D;
+                        height: 3px;
+                        width: 100px;
+
+                        .inner{
+                            background-color: $clr-green;
+                            height: 3px;
+                            width: 100px;
+                        }
+
+                    }
+
+                    &:hover{
+                        .text{
+                            color: white;
+                            transition: 0.2s;
+                        }
+                    }
+                }
+
+                &.three{
+                    .number{
+                        color: #a5a5a5;
+                        border: 3px solid #3D3D3D;
+                    }
+                    .text{
+                        color: #a5a5a5;
+                    }
+                }
+
+
+            }
+
+
+        }
+        
+        .content-container{
+            width: 100%;
+            display: flex;
+            position: relative;
+            column-gap: 50px;
+
+            .left-container{
+                width: 60%;
+                display: flex;
+                flex-direction: column;
+
+                .error{
+                    margin-left: 30px;
+                    margin-top: 20px;
+                    font-family: "SFProDisplayBold";
+                    color: #DC2938;
+                }
+                .credit-card{
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 20px;
+                    
+                    .credit-form{
+                        width: 100%;
+                        height: calc(50px * 8.5);
+                        background-color: #323232;
+                        border-radius: 12px;
+                        padding: 20px;
+                        border: 3px solid $clr-green;
+                        display: flex;
+                        flex-direction: column;
+                        row-gap: 30px;
+                        label{
+                            font-family: "SFProDisplayReg";
+                        }
+
+                        input{
+                            outline: none;
+                            background-color: #242424;
+                            padding: 15px;
+                            box-shadow: inset 0 0 0 2px #3D3D3D;
+                            border: 0;
+                            border-radius: 8px;
+                            padding: 20px;
+                            color: white;
+
+                            
+                        }
+
+                        .credit-level{
+                            height: 65px;
+                            width: 100%;
+                            
+                            &.one{
+                                display: flex;
+                                column-gap: 30px;
+                                align-items: center;
+                                .visa{
+                                    width: 120px;
+                                    height: 100%;
+                                    background-color: white;
+                                    border-radius: 8px;
+                                    overflow: clip;
+                                    img{
+                                        height: 100%;
+                                        width: 100%;
+                                        object-fit: cover;
+                                    }
+                                }
+
+                                .title{
+                                    font-family: "SFProTextBold";
+                                    font-size: 1.1rem;
+                                }
+                            }
+
+                            &.two{
+                                display: flex;
+                                flex-direction: column;
+                                row-gap: 10px;
+                                input{
+                                    height: 100%;
+                                    border: 0px solid transparent;
+                                }
+
+                                input[type=text]:focus{
+                                    border: 2px solid #01D47A;
+                                    transition: 0.2s;
+                                    color: #ffffff;
+                                }
+                            }
+
+                            &.three{
+                                display: flex;
+                                flex-direction: column;
+                                row-gap: 10px;
+                                input{
+                                    height: 100%;
+                                }
+
+                                input[type=text]:focus{
+                                    border: 2px solid #01D47A;
+                                    transition: 0.2s;
+                                    color: #ffffff;
+                                }
+                            }
+
+                            &.four{
+                                display: flex;
+                                width: 100%;
+                                column-gap: 30px;
+                                input{
+                                    height: 100%;
+                                }
+
+                                input[type=text]:focus{
+                                    border: 2px solid #01D47A;
+                                    transition: 0.2s;
+                                    color: #ffffff;
+                                }
+
+                                .expiration{
+                                    display: flex;
+                                    flex-direction: column;
+                                    row-gap: 10px;
+                                    width: 50%;
+                                }
+
+                                .security{
+                                    display: flex;
+                                    flex-direction: column;
+                                    row-gap: 10px;
+                                    width: 50%;
+                                }
+                            }
+                        }
+                    }
+                }
+                
+            }
+
+            .right-container{
+                width: 35%;
+                display: flex;
+                flex-direction: column;
+                row-gap: 20px;
+
+                .summary-final{
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 20px;
+                    .order-container{
+                        display: flex;
+                        flex-direction: column;
+                        row-gap: 15px;
+                        background-color: #323232;
+                        padding: 20px 30px 40px 30px;
+                        border-radius: 12px;
+                        .order-inner-container{
+                            display: flex;
+                            flex-direction: column;
+                            row-gap: 10px;
+                            .order-item{
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                .order-item-left{
+                                    display: flex;
+                                    flex-direction: column;
+                                    row-gap: 2px;
+                                    .title{
+                                        font-family: "SFProDisplayBold";
+                                    }
+    
+                                    .platform{
+                                        font-family: "SFProDisplayReg";
+                                        font-size: 0.9rem;
+                                        color: #a5a5a5;
+                                    }
+                                }
+    
+                                .order-item-right{
+                                    .price{
+                                        font-family: "SFProDisplayReg";
+                                        font-size: 1rem;
+                                        color: #a5a5a5;
+                                    }
+                                }
+    
+                            }
+                            .spacer-mini{
+                                height: 1px;
+                                width: 100%;
+                                background-color: #3D3D3D;
+                            }
+                        }
+                        
+                        .secure-container{
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: center;
+                            margin-top: 10px;
+                            column-gap: 10px;
+                            .lock{
+                                font-size: 35px;
+                                
+                                path{
+                                    stroke: $clr-green;
+                                }
+                            }
+
+                            .divisor{
+                                height: 30px;
+                                width: 1px;
+                                background-color: #6d6d6d;
+                            }
+                            
+                            .secure{
+                                display: flex;
+                                flex-direction: column;
+                                row-gap: 3px;
+                                .header{
+                                    font-family: "SFProDisplayBold";
+                                }
+
+                                .sub-header{
+                                    font-family: "SFProDisplayReg";
+                                    font-size: 0.9rem;
+                                    color: #a5a5a5;
+                                }
+                            }
+                        }
+
+
+                        
+                    }
+                }
+
+                .pay-container{
+                    background-color: #323232;
+                    -webkit-box-shadow: 0px -31px 22px -7px rgba(0,0,0,0.2);
+                    -moz-box-shadow: 0px -31px 22px -7px rgba(0,0,0,0.2);
+                    box-shadow: 0px -31px 22px -7px rgba(0,0,0,0.2);
+                    padding: 20px 30px 60px 30px;
+                    border-radius: 12px;
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 30px;
+                    position: sticky;
+                    bottom: 20px;
+                    .total-container{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: baseline;
+                        .text{
+                            font-family: "SFProDisplayBold";
+                        }
+
+                        .price{
+                            font-family: "SFProDisplayBold";
+                            font-size: 1.5rem;
+                        }
+                    }
+
+                    .pay-button{
+                        width: 100%;
+                        height: max-content;
+                        padding: 15px;
+                        background-color: #01D47A;
+                        border-radius: 12px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-family: "DTphuduMedium";
+                        font-size: 1.4rem;
+                        cursor: pointer;
+                        transition: 0.3s;
+                        &:hover{
+                            background-color: #02f089;
+                            transition: 0.3s;
+                        }
+                    }
+                }
+
+                .policy{
+                    margin-top: 10px;
+                    width: 100%;
+                    display: flex;
+                    padding-left: 30px;
+                    padding-right: 30px;
+
+                    p{
+                        text-align: center;
+                        font-family: "SFProDisplayReg";
+                        color: #999999;
+                        font-size: 0.9rem;
+                        line-height: 1.2rem;
+
+                        .link{
+                            font-family: "SFProDisplayReg";
+                            color: #6d6d6d;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+    
+}

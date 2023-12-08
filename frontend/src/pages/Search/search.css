@@ -1,0 +1,94 @@
+.search-container {
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+}
+.search-container .search-inner {
+  margin-left: 150px;
+  margin-right: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.search-container .search-inner .search-bar {
+  height: -moz-max-content;
+  height: max-content;
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.search-container .search-inner .search-bar .side-icon {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 80px;
+  background-color: #01D47A;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search-container .search-inner .search-bar .side-icon .icon {
+  font-size: 30px;
+}
+.search-container .search-inner .search-bar .search-input {
+  outline: none;
+  background-color: #3D3D3D;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: inset 0 0 0 2px #3D3D3D;
+  transition: 0.2s;
+  border: 2px solid transparent;
+  font-family: "SFProTextBold";
+  color: #ffffff;
+  width: 100%;
+  height: 80px;
+  border-radius: 100px;
+}
+.search-container .search-inner .search-bar .search-input:focus {
+  border: 2px solid #01D47A;
+  transition: 0.2s;
+  color: #ffffff;
+}
+.search-container .search-inner .search-bar .search-input::-moz-placeholder {
+  color: #a5a5a5;
+}
+.search-container .search-inner .search-bar .search-input::placeholder {
+  color: #a5a5a5;
+}
+.search-container .search-inner .filter-container {
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+  display: flex;
+  justify-content: center;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+.search-container .search-inner .filter-container input[type=text]:focus {
+  border: 2px solid #01D47A;
+  transition: 0.2s;
+  color: #ffffff;
+}
+.search-container .search-inner .filter-container input {
+  outline: none;
+  background-color: #242424;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: inset 0 0 0 2px #3D3D3D;
+  transition: 0.2s;
+  border: 2px solid transparent;
+  font-family: "SFProTextReg";
+  color: #ffffff;
+  width: 20%;
+  height: 55px;
+}
+.search-container .search-inner .filter-container input::-moz-placeholder {
+  color: white;
+}
+.search-container .search-inner .filter-container input::placeholder {
+  color: white;
+}/*# sourceMappingURL=search.css.map */

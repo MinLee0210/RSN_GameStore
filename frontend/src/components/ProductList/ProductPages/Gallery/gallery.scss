@@ -1,0 +1,112 @@
+@import '../../../../variables';
+.gallery-container{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    background-color: #323232;
+    z-index: 1000000000;
+    &.disabled{
+        display: none;
+    }
+
+    .cancel{
+        cursor: pointer;
+        width: max-content;
+        position: absolute;
+        right: 0;
+        margin-top: 25px;
+        margin-right: 30px;
+        .icon{
+            color: $clr-white;
+            font-size: 25px;
+            transition: 0.2s ease-out;
+            &:hover{
+                color: $clr-green;
+                transition: 0.2s ease-out;
+            }
+        }
+    }
+
+    .slideshow-container{
+        height: 100%;
+        width: 100%;
+        background-color: #272727;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 15px;
+        .preview-container{
+            height: 85%;
+            width: max-content;
+            border-radius: 12px;
+            overflow: hidden;
+            // background-color: aquamarine;
+            // animation: fadeIn 0.5s;
+            img{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                
+            }
+
+            .img1{
+                animation: fadeIn 0.5s;
+            }
+
+            .img2{
+                animation: fadeIn2 0.5s;
+            }
+
+            .img3{
+                animation: fadeIn3 0.5s;
+            }
+
+            .img4{
+                animation: fadeIn4 0.5s;
+            }
+        }
+
+        .sub-preview{
+            height: 15%;
+            width: max-content;
+            // background-color: aquamarine;
+            display: flex;
+            column-gap: 15px;
+            .preview{
+                height: 100%;
+                width: 150px;
+                border-radius: 8px;
+                overflow: hidden;
+                border: 2px solid transparent;
+                cursor: pointer;
+                &.active{
+                    border: 2px solid $clr-green;
+                }
+                img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+
+    @keyframes fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+      }
+    @keyframes fadeIn2 {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+      }
+    @keyframes fadeIn3 {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+      }
+    @keyframes fadeIn4 {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+      }
+}

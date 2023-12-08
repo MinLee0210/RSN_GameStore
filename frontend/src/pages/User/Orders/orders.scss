@@ -1,0 +1,81 @@
+@import '../../../variables';
+
+.order-container{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    row-gap: 60px;
+   
+    .order-item-outer{
+        width: 100%;
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+        position: relative;
+        color: white;
+        
+        .order-item-inner{
+            width: 100%;
+            height: max-content;
+            background-color: #323232;
+            border-radius: 12px;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+            transition: 0.3s;
+            cursor: pointer;
+            &:hover{
+                transition: 0.3s;
+                background-color: #373737;
+            }
+            .status{
+                position: absolute;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #314436;
+                border-radius: 0px 12px;
+                top: 0;
+                right: 0;
+                width: 100px;
+                height: 40px;
+                font-family: "SFProDisplayReg";
+                color: #25de57;
+            }
+            
+            // .order-item{
+            //     min-height: 100px;
+            //     width: 100%;
+
+            // }
+
+            .order-info{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .total{
+                    font-family: "SFProDisplayBold";
+                    font-size: 1.5rem;
+                }
+
+                .total-price{
+                    font-family: "SFProDisplayBold";
+                    font-size: 1.5rem;
+                }
+
+
+            }
+        }
+
+        .order-bottom{
+            display: flex;
+            column-gap: 5px;
+            font-family: "SFProDisplayReg";
+            color: #a5a5a5;
+        }
+    }
+}

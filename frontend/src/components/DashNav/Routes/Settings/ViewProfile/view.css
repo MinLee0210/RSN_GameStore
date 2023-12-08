@@ -1,0 +1,29 @@
+.view-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.view-container .headline {
+  font-family: "SFProTextMedium";
+  font-size: 1.5rem;
+}
+.view-container .table {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.view-container .table .row {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.view-container .table .row .cell {
+  border: 1px solid #3d3d3d;
+  width: 50%;
+  padding: 20px;
+  font-family: "SFProTextReg";
+}
+.view-container .table .row .cell.left {
+  color: #a5a5a5;
+}/*# sourceMappingURL=view.css.map */

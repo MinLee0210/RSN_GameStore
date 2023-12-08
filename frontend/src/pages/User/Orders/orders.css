@@ -1,0 +1,69 @@
+.order-container {
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  row-gap: 60px;
+}
+.order-container .order-item-outer {
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  position: relative;
+  color: white;
+}
+.order-container .order-item-outer .order-item-inner {
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+  background-color: #323232;
+  border-radius: 12px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.order-container .order-item-outer .order-item-inner:hover {
+  transition: 0.3s;
+  background-color: #373737;
+}
+.order-container .order-item-outer .order-item-inner .status {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #314436;
+  border-radius: 0px 12px;
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 40px;
+  font-family: "SFProDisplayReg";
+  color: #25de57;
+}
+.order-container .order-item-outer .order-item-inner .order-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.order-container .order-item-outer .order-item-inner .order-info .total {
+  font-family: "SFProDisplayBold";
+  font-size: 1.5rem;
+}
+.order-container .order-item-outer .order-item-inner .order-info .total-price {
+  font-family: "SFProDisplayBold";
+  font-size: 1.5rem;
+}
+.order-container .order-item-outer .order-bottom {
+  display: flex;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+  font-family: "SFProDisplayReg";
+  color: #a5a5a5;
+}/*# sourceMappingURL=orders.css.map */

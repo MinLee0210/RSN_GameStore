@@ -1,0 +1,222 @@
+.add-container {
+  width: 100%;
+}
+.add-container .header {
+  text-align: left;
+  display: flex;
+  align-items: center;
+  color: #01D47A;
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+.add-container .header .icon {
+  color: #01D47A;
+  font-size: 35px;
+  margin-right: 15px;
+}
+.add-container .form-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+.add-container .form-container .form-container-level {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  min-height: 70px;
+}
+.add-container .form-container .form-container-level label {
+  font-family: "SFProTextBold";
+  font-size: 1.1rem;
+}
+.add-container .form-container .form-container-level .field-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+.add-container .form-container .form-container-level .field-container select {
+  width: 350px;
+  min-height: 50px;
+  background-color: #242424;
+  box-shadow: inset 0 0 0 2px #3D3D3D;
+  border: 0;
+  transition: 0.2s;
+  border-radius: 8px;
+  color: #ffffff;
+  padding: 15px;
+  font-family: "SFProTextReg";
+}
+.add-container .form-container .form-container-level .field-container select:focus {
+  border: 2px solid #01D47A;
+  transition: 0.2s;
+  color: #ffffff;
+}
+.add-container .form-container .form-container-level .field-container input {
+  width: 350px;
+  height: 100%;
+  min-height: 50px;
+  outline: none;
+  background-color: #242424;
+  padding: 15px;
+  box-shadow: inset 0 0 0 2px #3D3D3D;
+  transition: 0.2s;
+  border: 0;
+  border-radius: 8px;
+  color: #ffffff;
+}
+.add-container .form-container .form-container-level .field-container input::-moz-placeholder {
+  font-family: "SFProTextReg";
+}
+.add-container .form-container .form-container-level .field-container input::placeholder {
+  font-family: "SFProTextReg";
+}
+.add-container .form-container .form-container-level .field-container input:focus {
+  border: 2px solid #01D47A;
+  transition: 0.2s;
+  color: #ffffff;
+}
+.add-container .form-container .form-container-level .field-container input option {
+  padding: 10px;
+}
+.add-container .form-container .form-container-level .field-container input[type=date] {
+  font-family: "SFProTextReg";
+}
+.add-container .form-container .form-container-level .field-container input[type=date]::-webkit-calendar-picker-indicator {
+  background-color: #ffffff;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+.add-container .form-container .form-container-level .field-container.three {
+  width: 100%;
+  height: 100%;
+}
+.add-container .form-container .form-container-level .field-container.three .ck {
+  font-family: "SFProTextReg";
+}
+.add-container .form-container .form-container-level .field-container.three .ck .ck-editor__top {
+  height: 50px;
+  position: relative;
+}
+.add-container .form-container .form-container-level .field-container.three .ck .ck-editor__top .ck-sticky-panel {
+  height: 100%;
+}
+.add-container .form-container .form-container-level .field-container.three .ck .ck-editor__top .ck-sticky-panel .ck-sticky-panel__content {
+  height: 100%;
+}
+.add-container .form-container .form-container-level .field-container.three .ck .ck-editor__top .ck-sticky-panel .ck-sticky-panel__content .ck-toolbar {
+  height: 100%;
+  background-color: #F0F2F5;
+  border-radius: 8px 8px 0 0;
+}
+.add-container .form-container .form-container-level .field-container.three .ck .ck-editor__main .ck-content {
+  min-height: 400px;
+  background-color: #242424;
+  box-shadow: inset 0 0 0 2px #3D3D3D;
+  border: 0;
+  border-radius: 0 0 8px 8px;
+}
+.add-container .form-container .form-container-level .field-container.four {
+  width: 100%;
+  height: 100%;
+}
+.add-container .form-container .form-container-level .field-container.four .image-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.add-container .form-container .form-container-level .field-container.four .image-container .image-cover {
+  width: 490px;
+  height: 400px;
+  background-color: #242424;
+  box-shadow: inset 0 0 0 2px #3D3D3D;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.add-container .form-container .form-container-level .field-container.four .image-container .image-cover .upload {
+  height: -moz-max-content;
+  height: max-content;
+  font-family: "SFProTextReg";
+  box-shadow: none;
+  width: 250px;
+}
+.add-container .form-container .form-container-level .field-container.four .image-container .image-cover:hover {
+  border: 1px solid #01D47A;
+  transition: 0.2s;
+}
+.add-container .form-container .form-container-level .field-container.four .image-container .image-cover .icon {
+  font-size: 50px;
+  color: #01D47A;
+}
+.add-container .form-container .form-container-level .field-container.four .image-container .image-cover label {
+  font-family: "SFProTextReg";
+}
+.add-container .form-container .form-container-level .field-container.four .image-container .image-showcase {
+  display: flex;
+  height: 400px;
+  width: 700px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  row-gap: 20px;
+}
+.add-container .form-container .form-container-level .field-container.four .image-container .image-showcase-item {
+  height: 47%;
+  width: 215px;
+  background-color: #242424;
+  box-shadow: inset 0 0 0 2px #3D3D3D;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 10px;
+  align-items: center;
+}
+.add-container .form-container .form-container-level .field-container.four .image-container .image-showcase-item .upload {
+  height: -moz-max-content;
+  height: max-content;
+  font-family: "SFProTextReg";
+  box-shadow: none;
+  width: 250px;
+}
+.add-container .form-container .form-container-level .field-container.four .image-container .image-showcase-item label {
+  font-family: "SFProTextReg";
+  font-size: 0.9rem;
+}
+.add-container .form-container .form-container-level .field-container.four .image-container .image-showcase-item .icon {
+  font-size: 40px;
+  color: #01D47A;
+}
+.add-container .form-container .form-container-level .field-container.four .image-container .image-showcase-item:hover {
+  border: 1px solid #01D47A;
+  transition: 0.2s;
+}
+.add-container .form-container .bottom-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.add-container .form-container .bottom-container label {
+  font-family: "SFProTextReg";
+  color: #A5A5A5;
+}
+.add-container .form-container .bottom-container .submit-button {
+  width: 215px;
+  background-color: #01D47A;
+  border: 0;
+  border-radius: 8px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: "DTphuduMedium";
+  color: white;
+  cursor: pointer;
+}/*# sourceMappingURL=add.css.map */

@@ -1,0 +1,10 @@
+.product-container{
+    position: relative;
+    min-height: max-content;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    // justify-content: space-between;
+    row-gap: 20px;
+    column-gap: 32px;
+}

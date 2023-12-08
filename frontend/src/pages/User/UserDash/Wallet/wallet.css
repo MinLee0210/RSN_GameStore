@@ -1,0 +1,46 @@
+.wallet-card {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  align-items: center;
+}
+.wallet-card .icon {
+  color: #01D47A;
+  font-size: 40px;
+}
+.wallet-card .header {
+  font-family: "SFProTextBold";
+  font-size: 1.2rem;
+}
+.wallet-card .stats-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: -moz-max-content;
+  width: max-content;
+  row-gap: 20px;
+}
+.wallet-card .stats-container .separator {
+  height: 1px;
+  width: 100%;
+  background-color: #474747;
+}
+.wallet-card .stats-container .numbers-container {
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+.wallet-card .stats-container .numbers-container .sub-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 5px;
+}
+.wallet-card .stats-container .numbers-container .sub-stat .number {
+  font-family: "SFProTextBold";
+  font-size: 2rem;
+}
+.wallet-card .stats-container .numbers-container .sub-stat .title {
+  font-family: "SFProTextReg";
+  color: #a5a5a5;
+}/*# sourceMappingURL=wallet.css.map */
